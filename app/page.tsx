@@ -114,44 +114,6 @@ const certifications = [
   },
 ];
 
-const styles = {
-  section: "px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24",
-  container: "max-w-6xl mx-auto",
-
-  heroTitle: "text-3xl sm:text-4xl md:text-5xl font-black",
-  sectionTitle:
-    "text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12",
-  sectionSubtitle:
-    "text-xl sm:text-2xl md:text-3xl font-black text-center mb-6 md:mb-8",
-
-  text: "text-base md:text-lg leading-relaxed",
-  textSmall: "text-sm leading-relaxed",
-
-  card: "rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full",
-  cardTitle: "text-xl sm:text-2xl md:text-3xl font-black text-center mb-4",
-  cardTitleSmall:
-    "text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-4",
-  cardHighlight: "rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col h-full",
-
-  button:
-    "inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-lg text-center transition-all duration-300",
-  primaryButton: "bg-amber-900 text-white hover:bg-amber-900/90",
-
-  gap: "gap-6 md:gap-8 lg:gap-12",
-  marginBottom: "mb-8 sm:mb-12 md:mb-16",
-  marginTop: "mt-8 sm:mt-12 md:mt-16 lg:mt-24",
-
-  grid2: "grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12",
-  grid3:
-    "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10",
-
-  roundedImage: "rounded-lg shadow-lg",
-
-  primaryBg: "bg-primary text-white",
-  whiteBg: "bg-white text-gray-900",
-  accentText: "text-primary font-semibold",
-};
-
 export default function Page() {
   return (
     <>
@@ -170,7 +132,7 @@ export default function Page() {
 
         <div className="absolute inset-0 px-4 sm:px-6 md:px-12 lg:px-24 flex items-center text-white">
           <div className="flex flex-col gap-6">
-            <h1 className={styles.heroTitle}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black">
               <span className="block mb-3">Moi c&apos;est Esther,</span>
               <span className="bg-teal-100 text-teal-900 px-3 py-1 rounded-lg inline md:inline-block">
                 Éducatrice comportementaliste canine à Lille
@@ -178,7 +140,7 @@ export default function Page() {
             </h1>
 
             <div className="max-w-2xl">
-              <p className={`${styles.text} mb-6`}>
+              <p className="text-base md:text-lg leading-relaxed mb-6">
                 Je suis là pour vous aider à comprendre votre chien (votre{" "}
                 <span className="italic">pawte</span>). Mon objectif est de vous
                 apprendre à communiquer efficacement avec lui, à l&apos;intégrer
@@ -198,22 +160,20 @@ export default function Page() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.whiteBg}`}>
-        <div className={styles.container}>
-          <h2 className={`${styles.sectionTitle} text-primary`}>
+      <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-white text-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12 text-primary">
             Pourquoi choisir Entre Pawtes ?
           </h2>
 
-          <div
-            className={`flex flex-col md:flex-row ${styles.gap} ${styles.marginBottom} items-center`}
-          >
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 mb-8 sm:mb-12 md:mb-16 items-center">
             <div className="w-full md:w-1/2">
               <Image
                 src="/images/sully-le-ouf.webp"
                 alt="Sully, le chien d'Esther"
                 width={600}
                 height={600}
-                className={`${styles.roundedImage} w-full h-auto`}
+                className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
 
@@ -238,17 +198,15 @@ export default function Page() {
             </ul>
           </div>
 
-          <h3
-            className={`${styles.sectionSubtitle} text-primary ${styles.marginTop}`}
-          >
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-6 md:mb-8 text-primary mt-8 sm:mt-12 md:mt-16 lg:mt-24">
             Mes avis
           </h3>
 
-          <div className={styles.grid3}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className={`${styles.card} bg-primary text-white`}
+                className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-primary text-white"
               >
                 <div className="text-yellow-300 mb-4 text-xl">★★★★★</div>
                 <p className="mb-5">{testimonial.text}</p>
@@ -262,7 +220,7 @@ export default function Page() {
               href="https://maps.app.goo.gl/ba1gco5uMirkRtSq7"
               target="_blank"
               rel="noopener noreferrer"
-              className={`${styles.button} ${styles.primaryButton} rounded-full`}
+              className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-full text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90"
             >
               Voir tous les avis
             </a>
@@ -270,11 +228,13 @@ export default function Page() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.primaryBg}`}>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Mes forfaits</h2>
+      <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-primary text-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
+            Mes forfaits
+          </h2>
 
-          <div className={styles.grid2}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
             {servicePlans.map((plan, index) => (
               <div key={index} className="relative mt-20">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
@@ -286,12 +246,8 @@ export default function Page() {
                     className="object-contain drop-shadow-xl"
                   />
                 </div>
-                <div
-                  className={`${styles.cardHighlight} bg-white text-gray-800 pt-20`}
-                >
-                  <h3
-                    className={`${styles.cardTitle} text-center text-primary mb-4`}
-                  >
+                <div className="rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white text-gray-800 pt-20">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-4 text-primary">
                     {plan.title}
                   </h3>
                   <span className="text-2xl sm:text-3xl md:text-4xl font-medium text-primary text-center mb-6">
@@ -312,7 +268,7 @@ export default function Page() {
                       href={plan.calLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`${styles.button} ${styles.primaryButton} w-full rounded-xl font-extrabold`}
+                      className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-xl text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90 w-full font-extrabold"
                     >
                       Choisir
                     </a>
@@ -322,20 +278,18 @@ export default function Page() {
             ))}
           </div>
 
-          <div className={styles.marginTop}>
-            <h3 className={`${styles.sectionSubtitle}`}>
+          <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-24">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-6 md:mb-8">
               Mes prestations à l&apos;unité
             </h3>
 
-            <div className={styles.grid3}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
               {unitServices.map((service, index) => (
                 <div
                   key={index}
-                  className={`${styles.card} bg-white/90 text-primary`}
+                  className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white/90 text-primary"
                 >
-                  <h4
-                    className={`${styles.cardTitleSmall} text-center text-primary`}
-                  >
+                  <h4 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-4 text-primary">
                     {service.title}
                   </h4>
                   <div className="text-center mb-3 sm:mb-6">
@@ -356,7 +310,7 @@ export default function Page() {
                       href={service.calLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`${styles.button} ${styles.primaryButton} w-full rounded-xl font-extrabold`}
+                      className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-xl text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90 w-full font-extrabold"
                     >
                       Choisir
                     </a>
@@ -366,7 +320,7 @@ export default function Page() {
             </div>
 
             <div className="text-center mt-8 sm:mt-10 mb-12 sm:mb-20">
-              <p className={`${styles.textSmall} text-white/80`}>
+              <p className="text-sm leading-relaxed text-white/80">
                 Vous ne trouvez pas la prestation que vous recherchez ?
                 Contactez-moi via{" "}
                 <a
@@ -422,7 +376,7 @@ export default function Page() {
                   Faches-Thumesnil, Loos, Haubourdin, Lomme et Capinghem.
                 </span>
               </p>
-              <p className={`${styles.textSmall} italic`}>
+              <p className="text-sm leading-relaxed italic">
                 Au-delà de cette zone, des frais de déplacement de 0,50€/km
                 s&apos;appliquent.
               </p>
@@ -431,32 +385,30 @@ export default function Page() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.whiteBg}`}>
-        <div className={styles.container}>
-          <h2 className={`${styles.sectionTitle} text-primary`}>
+      <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-white text-gray-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12 text-primary">
             Qui suis-je ?
           </h2>
 
-          <div
-            className={`flex flex-col md:flex-row ${styles.gap} mx-auto justify-center md:items-center`}
-          >
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 mx-auto justify-center md:items-center">
             <div className="w-full md:w-1/3 mb-6 md:mb-0">
               <Image
                 src="/images/esther-avec-sully-vertical.webp"
                 alt="Esther avec son chien Sully"
                 width={350}
                 height={350}
-                className={`${styles.roundedImage} mx-auto md:mx-0 w-full max-w-[300px] h-auto`}
+                className="rounded-lg shadow-lg mx-auto md:mx-0 w-full max-w-[300px] h-auto"
               />
             </div>
 
             <div className="w-full md:w-2/3 space-y-5">
-              <h3 className={`text-xl sm:text-2xl font-extrabold text-primary`}>
+              <h3 className="text-xl sm:text-2xl font-extrabold text-primary">
                 Moi, c&apos;est Esther,{" "}
                 <span className="font-bold">dogmom de Sully.</span>
               </h3>
 
-              <div className={`${styles.text} space-y-4`}>
+              <div className="text-base md:text-lg leading-relaxed space-y-4">
                 <p>
                   J&apos;ai toujours aimé les animaux, en particulier les
                   chiens, qui sont pour moi des êtres si purs et gentils.
@@ -466,10 +418,10 @@ export default function Page() {
 
                 <p>
                   J&apos;ai commencé par faire du{" "}
-                  <span className={styles.accentText}>bénévolat</span> dans un
-                  refuge, où je m&apos;occupais de plusieurs chiens. Ensuite,
-                  j&apos;ai eu mon propre chien, ce qui m&apos;a permis
-                  <span className={styles.accentText}>
+                  <span className="text-primary font-semibold">bénévolat</span>{" "}
+                  dans un refuge, où je m&apos;occupais de plusieurs chiens.
+                  Ensuite, j&apos;ai eu mon propre chien, ce qui m&apos;a permis
+                  <span className="text-primary font-semibold">
                     {" "}
                     d&apos;en apprendre davantage sur l&apos;éducation canine
                   </span>
@@ -479,25 +431,27 @@ export default function Page() {
                 <p>
                   Deux ans après avoir accueilli Sully, j&apos;ai décidé de me
                   réorienter et de me
-                  <span className={styles.accentText}>
+                  <span className="text-primary font-semibold">
                     {" "}
                     former à l&apos;éducation et au comportement canin
                     bienveillant chez Vox Animae
                   </span>
                   , en passant également mon{" "}
-                  <span className={styles.accentText}>ACACED</span>.
+                  <span className="text-primary font-semibold">ACACED</span>.
                 </p>
 
-                <p className={styles.accentText}>
+                <p className="text-primary font-semibold">
                   Mon objectif est de créer une relation harmonieuse entre
                   l&apos;humain et le chien.
                 </p>
 
                 <p>
                   C&apos;est ainsi que le nom &quot;
-                  <span className={styles.accentText}>Entre Pawtes</span>&quot;
-                  prend tout son sens :
-                  <span className={styles.accentText}>
+                  <span className="text-primary font-semibold">
+                    Entre Pawtes
+                  </span>
+                  &quot; prend tout son sens :
+                  <span className="text-primary font-semibold">
                     {" "}
                     je veux que votre chien devienne votre véritable pote de
                     vie.
@@ -509,11 +463,13 @@ export default function Page() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.primaryBg}`}>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Mes diplômes et formations</h2>
+      <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-primary text-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
+            Mes diplômes et formations
+          </h2>
 
-          <div className={styles.grid3}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
             {certifications.map((cert, index) => (
               <div key={index} className="relative mt-14">
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
@@ -525,12 +481,8 @@ export default function Page() {
                     className="object-contain drop-shadow-xl"
                   />
                 </div>
-                <div
-                  className={`${styles.cardHighlight} bg-white text-gray-800 pt-14 sm:pt-16 h-full flex flex-col`}
-                >
-                  <h3
-                    className={`${styles.cardTitleSmall} text-primary mb-3 sm:mb-5 text-center`}
-                  >
+                <div className="rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col pt-14 sm:pt-16 h-full bg-white text-gray-800">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-5 text-primary">
                     {cert.title}
                   </h3>
                   <ul className="space-y-3 sm:space-y-4 mt-1 sm:mt-2 flex-grow">
