@@ -162,7 +162,7 @@ export default function Page() {
 
       <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12 text-primary">
+          <h2 className="text-3xl md:text-4xl font-black text-center mb-8 md:mb-12 text-primary">
             Pourquoi choisir Entre Pawtes ?
           </h2>
 
@@ -198,7 +198,7 @@ export default function Page() {
             </ul>
           </div>
 
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-6 md:mb-8 text-primary mt-8 sm:mt-12 md:mt-16 lg:mt-24">
+          <h3 className="text-2xl md:text-3xl font-black text-center mb-6 md:mb-8 text-primary mt-8 sm:mt-12 md:mt-16 lg:mt-24">
             Mes avis
           </h3>
 
@@ -230,14 +230,14 @@ export default function Page() {
 
       <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-primary text-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
             Mes forfaits
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
             {servicePlans.map((plan, index) => (
               <div key={index} className="relative mt-20">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <div className="absolute md:-top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                   <Image
                     src={plan.image}
                     alt={plan.title}
@@ -247,10 +247,10 @@ export default function Page() {
                   />
                 </div>
                 <div className="rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white text-gray-800 pt-20">
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-4 text-primary">
+                  <h3 className="text-2xl md:text-3xl font-black text-center mb-4 text-primary">
                     {plan.title}
                   </h3>
-                  <span className="text-2xl sm:text-3xl md:text-4xl font-medium text-primary text-center mb-6">
+                  <span className="text-2xl md:text-3xl font-medium text-primary text-center mb-6">
                     {plan.price}
                   </span>
                   <ul className="space-y-4 mb-8">
@@ -279,7 +279,7 @@ export default function Page() {
           </div>
 
           <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-24">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-center mb-6 md:mb-8">
+            <h3 className="text-2xl md:text-3xl font-black text-center mb-6 md:mb-8">
               Mes prestations à l&apos;unité
             </h3>
 
@@ -387,7 +387,7 @@ export default function Page() {
 
       <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12 text-primary">
+          <h2 className="text-3xl md:text-4xl font-black text-center mb-8 md:mb-12 text-primary">
             Qui suis-je ?
           </h2>
 
@@ -465,7 +465,7 @@ export default function Page() {
 
       <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-primary text-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
             Mes diplômes et formations
           </h2>
 
@@ -481,7 +481,7 @@ export default function Page() {
                     className="object-contain drop-shadow-xl"
                   />
                 </div>
-                <div className="rounded-lg shadow-lg sm:p-6 md:p-8 md:pt-14 flex flex-col h-full bg-white text-gray-800">
+                <div className="rounded-lg shadow-lg p-8 pt-14 flex flex-col h-full bg-white text-gray-800">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-5 text-primary">
                     {cert.title}
                   </h3>
