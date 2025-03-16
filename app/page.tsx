@@ -277,7 +277,7 @@ export default function Page() {
           <div className={styles.grid2}>
             {servicePlans.map((plan, index) => (
               <div key={index} className="relative mt-20">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                   <Image
                     src={plan.image}
                     alt={plan.title}
