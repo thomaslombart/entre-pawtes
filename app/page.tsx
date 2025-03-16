@@ -344,12 +344,12 @@ export default function Page() {
           </div>
 
           <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden gap-4 sm:gap-8 md:gap-12">
-            <div className="w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-auto">
+            <div className="w-full md:w-1/2">
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1n4tB_zyC39Fu2TOfmWCkE7LCottYyHQ&ehbc=2E312F&hl=fr"
                 width="100%"
                 height="100%"
-                style={{ minHeight: "250px" }}
+                style={{ marginTop: "-70px", height: "400px" }}
                 title="Zone de déplacement sans frais supplémentaires"
                 loading="lazy"
                 allowFullScreen
