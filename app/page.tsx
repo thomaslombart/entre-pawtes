@@ -115,31 +115,35 @@ const certifications = [
 ];
 
 const styles = {
-  section: "px-6 md:px-8 py-16 md:py-24",
+  section: "px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24",
   container: "max-w-6xl mx-auto",
 
-  heroTitle: "text-4xl md:text-5xl font-black",
-  sectionTitle: "text-3xl md:text-4xl font-black text-center mb-12",
-  sectionSubtitle: "text-2xl md:text-3xl font-black text-center mb-8",
+  heroTitle: "text-3xl sm:text-4xl md:text-5xl font-black",
+  sectionTitle:
+    "text-2xl sm:text-3xl md:text-4xl font-black text-center mb-8 md:mb-12",
+  sectionSubtitle:
+    "text-xl sm:text-2xl md:text-3xl font-black text-center mb-6 md:mb-8",
 
   text: "text-base md:text-lg leading-relaxed",
   textSmall: "text-sm leading-relaxed",
 
-  card: "rounded-lg shadow-md p-8 flex flex-col h-full",
-  cardTitle: "text-2xl md:text-3xl font-black text-center mb-4",
-  cardTitleSmall: "text-xl md:text-2xl font-black text-center mb-4",
-  cardHighlight: "rounded-lg shadow-lg p-8 flex flex-col h-full",
+  card: "rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full",
+  cardTitle: "text-xl sm:text-2xl md:text-3xl font-black text-center mb-4",
+  cardTitleSmall:
+    "text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-4",
+  cardHighlight: "rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col h-full",
 
   button:
-    "inline-block py-3 px-8 font-bold rounded-lg text-center transition-all duration-300",
+    "inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-lg text-center transition-all duration-300",
   primaryButton: "bg-amber-900 text-white hover:bg-amber-900/90",
 
-  gap: "gap-8 md:gap-12",
-  marginBottom: "mb-12 md:mb-16",
-  marginTop: "mt-12 md:mt-24",
+  gap: "gap-6 md:gap-8 lg:gap-12",
+  marginBottom: "mb-8 sm:mb-12 md:mb-16",
+  marginTop: "mt-8 sm:mt-12 md:mt-16 lg:mt-24",
 
-  grid2: "grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12",
-  grid3: "grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10",
+  grid2: "grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12",
+  grid3:
+    "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10",
 
   roundedImage: "rounded-lg shadow-lg",
 
@@ -151,7 +155,7 @@ const styles = {
 export default function Page() {
   return (
     <>
-      <section className="relative w-full h-screen">
+      <section className="relative w-full h-[80vh] md:h-screen">
         <Image
           src="/images/home.webp"
           alt="Éducatrice canine avec un chien dans un environnement naturel"
@@ -164,11 +168,11 @@ export default function Page() {
 
         <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="absolute inset-0 px-6 md:px-12 lg:px-24 flex items-center text-white">
+        <div className="absolute inset-0 px-4 sm:px-6 md:px-12 lg:px-24 flex items-center text-white">
           <div className="flex flex-col gap-6">
             <h1 className={styles.heroTitle}>
               <span className="block mb-3">Moi c&apos;est Esther,</span>
-              <span className="bg-teal-100 text-teal-900 px-3 py-1 rounded-lg inline-block whitespace-nowrap">
+              <span className="bg-teal-100 text-teal-900 px-3 py-1 rounded-lg inline md:inline-block">
                 Éducatrice comportementaliste canine à Lille
               </span>
             </h1>
@@ -203,15 +207,17 @@ export default function Page() {
           <div
             className={`flex flex-col md:flex-row ${styles.gap} ${styles.marginBottom} items-center`}
           >
-            <Image
-              src="/images/sully-le-ouf.webp"
-              alt="Sully, le chien d'Esther"
-              width={600}
-              height={600}
-              className={`${styles.roundedImage} h-full`}
-            />
+            <div className="w-full md:w-1/2">
+              <Image
+                src="/images/sully-le-ouf.webp"
+                alt="Sully, le chien d'Esther"
+                width={600}
+                height={600}
+                className={`${styles.roundedImage} w-full h-auto`}
+              />
+            </div>
 
-            <ul className="space-y-4">
+            <ul className="space-y-4 w-full md:w-1/2">
               <CheckmarkItem
                 emoji="🔍"
                 title="Une approche personnalisée et bienveillante"
@@ -251,7 +257,7 @@ export default function Page() {
             ))}
           </div>
 
-          <div className="text-center mt-14">
+          <div className="text-center mt-10 md:mt-14">
             <a
               href="https://maps.app.goo.gl/ba1gco5uMirkRtSq7"
               target="_blank"
@@ -275,8 +281,8 @@ export default function Page() {
                   <Image
                     src={plan.image}
                     alt={plan.title}
-                    width={160}
-                    height={160}
+                    width={140}
+                    height={140}
                     className="object-contain drop-shadow-xl"
                   />
                 </div>
@@ -288,7 +294,7 @@ export default function Page() {
                   >
                     {plan.title}
                   </h3>
-                  <span className="text-3xl md:text-4xl font-medium text-primary text-center mb-6">
+                  <span className="text-2xl sm:text-3xl md:text-4xl font-medium text-primary text-center mb-6">
                     {plan.price}
                   </span>
                   <ul className="space-y-4 mb-8">
@@ -332,12 +338,12 @@ export default function Page() {
                   >
                     {service.title}
                   </h4>
-                  <div className="text-center mb-6">
-                    <span className="text-2xl font-medium text-primary">
+                  <div className="text-center mb-3 sm:mb-6">
+                    <span className="text-xl sm:text-2xl font-medium text-primary">
                       {service.price}
                     </span>
                   </div>
-                  <ul className="space-y-4 mb-8">
+                  <ul className="space-y-2 sm:space-y-4 mb-4 sm:mb-8">
                     {service.features.map((feature, i) => (
                       <li key={i} className="flex items-start">
                         <CheckmarkItem.Icon />
@@ -359,7 +365,7 @@ export default function Page() {
               ))}
             </div>
 
-            <div className="text-center mt-10 mb-20">
+            <div className="text-center mt-8 sm:mt-10 mb-12 sm:mb-20">
               <p className={`${styles.textSmall} text-white/80`}>
                 Vous ne trouvez pas la prestation que vous recherchez ?
                 Contactez-moi via{" "}
@@ -383,20 +389,20 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row bg-white rounded-xl min-h-[360px] overflow-hidden gap-12">
-            <div className="flex-1">
+          <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden gap-4 sm:gap-8 md:gap-12">
+            <div className="w-full md:w-1/2 h-[250px] sm:h-[300px] md:h-auto">
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1n4tB_zyC39Fu2TOfmWCkE7LCottYyHQ&ehbc=2E312F&hl=fr"
                 width="100%"
-                className="h-full"
-                style={{ marginTop: "-70px", height: "430px" }}
+                height="100%"
+                style={{ minHeight: "250px" }}
                 title="Zone de déplacement sans frais supplémentaires"
                 loading="lazy"
                 allowFullScreen
               />
             </div>
-            <div className="flex-1 flex flex-col justify-center text-gray-900">
-              <h3 className="mb-4 text-xl font-extrabold">
+            <div className="w-full md:w-1/2 flex flex-col justify-center text-gray-900 p-4 sm:p-6">
+              <h3 className="mb-2 sm:mb-4 text-xl font-extrabold">
                 Frais de déplacement{" "}
                 <span className="relative inline-block">
                   <span className="relative z-10 text-orange-900 font-extrabold">
@@ -406,7 +412,7 @@ export default function Page() {
                 </span>{" "}
                 <span>dans un rayon de 10 km autour de Lille</span>
               </h3>
-              <p className="mb-4">
+              <p className="mb-2 sm:mb-4">
                 <span className="font-bold text-gray-900 text-lg block mb-1">
                   Zones desservies sans frais :
                 </span>
@@ -434,16 +440,18 @@ export default function Page() {
           <div
             className={`flex flex-col md:flex-row ${styles.gap} mx-auto justify-center md:items-center`}
           >
-            <Image
-              src="/images/esther-avec-sully-vertical.webp"
-              alt="Esther avec son chien Sully"
-              width={350}
-              height={350}
-              className={`${styles.roundedImage} mx-auto md:mx-0`}
-            />
+            <div className="w-full md:w-1/3 mb-6 md:mb-0">
+              <Image
+                src="/images/esther-avec-sully-vertical.webp"
+                alt="Esther avec son chien Sully"
+                width={350}
+                height={350}
+                className={`${styles.roundedImage} mx-auto md:mx-0 w-full max-w-[300px] h-auto`}
+              />
+            </div>
 
-            <div className="md:w-1/2 space-y-5">
-              <h3 className={`text-2xl font-extrabold text-primary`}>
+            <div className="w-full md:w-2/3 space-y-5">
+              <h3 className={`text-xl sm:text-2xl font-extrabold text-primary`}>
                 Moi, c&apos;est Esther,{" "}
                 <span className="font-bold">dogmom de Sully.</span>
               </h3>
@@ -512,20 +520,20 @@ export default function Page() {
                   <Image
                     src={cert.image}
                     alt={cert.title}
-                    width={200}
-                    height={200}
+                    width={140}
+                    height={140}
                     className="object-contain drop-shadow-xl"
                   />
                 </div>
                 <div
-                  className={`${styles.cardHighlight} bg-white text-gray-800 pt-16 h-full flex flex-col`}
+                  className={`${styles.cardHighlight} bg-white text-gray-800 pt-14 sm:pt-16 h-full flex flex-col`}
                 >
                   <h3
-                    className={`${styles.cardTitleSmall} text-primary mb-5 text-center`}
+                    className={`${styles.cardTitleSmall} text-primary mb-3 sm:mb-5 text-center`}
                   >
                     {cert.title}
                   </h3>
-                  <ul className="space-y-4 mt-2 flex-grow">
+                  <ul className="space-y-3 sm:space-y-4 mt-1 sm:mt-2 flex-grow">
                     {cert.description.map((item, i) => (
                       <li key={i} className="flex items-start">
                         <span className="text-primary font-bold mr-2">•</span>

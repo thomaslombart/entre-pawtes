@@ -2,37 +2,37 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 py-12 px-8 border-t border-gray-200">
+    <footer className="bg-gray-50 py-8 md:py-12 px-4 sm:px-6 md:px-8 border-t border-gray-200">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center gap-4 mb-8 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full md:w-auto">
             <Image
               src="/images/entre-pawtes.png"
               alt="Entre Pawtes"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               className="rounded-full"
             />
-            <div className="space-y-2">
+            <div className="space-y-2 text-center sm:text-left">
               <h3 className="text-lg font-bold text-primary">Entre Pawtes</h3>
               <p>Éducation comportementaliste canine à Lille</p>
               <a
                 href="mailto:entrepawtes@gmail.com"
-                className="flex items-center text-primary font-semibold hover:underline"
+                className="flex items-center justify-center sm:justify-start text-primary font-semibold hover:underline"
               >
                 entrepawtes@gmail.com
               </a>
             </div>
           </div>
 
-          <div className="text-right">
+          <div className="text-center md:text-right w-full md:w-auto">
             <h3 className="text-lg font-bold text-primary mb-4">Suivez-moi</h3>
             <div className="flex flex-col space-y-3">
               <a
                 href="https://www.instagram.com/entre_pawtes/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-end hover:text-primary transition-colors"
+                className="flex items-center justify-center md:justify-end hover:text-primary transition-colors"
               >
                 <span className="mr-2">@entre_pawtes</span>
                 <Image
@@ -46,7 +46,7 @@ export default function Footer() {
                 href="https://www.youtube.com/@esther-entrepawtes"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-end hover:text-primary transition-colors"
+                className="flex items-center justify-center md:justify-end hover:text-primary transition-colors"
               >
                 <span className="mr-2">Esther</span>
                 <svg className="w-6 h-6" fill="red" viewBox="0 0 24 24">

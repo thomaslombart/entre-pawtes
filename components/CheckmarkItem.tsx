@@ -21,16 +21,16 @@ const CheckmarkItem: React.FC<CheckmarkItemProps> & {
       )}
       <div>
         <h4 className="text-lg font-bold text-primary mb-1">{title}</h4>
-        <p>{description}</p>
+        <p className="text-sm sm:text-base">{description}</p>
       </div>
     </li>
   );
 };
 
 const CheckmarkIcon: React.FC = () => (
-  <div className="h-6 w-6 text-white mr-3 flex-shrink-0 rounded-full bg-primary flex items-center justify-center">
+  <div className="h-5 w-5 sm:h-6 sm:w-6 text-white mr-2 sm:mr-3 flex-shrink-0 rounded-full bg-primary flex items-center justify-center">
     <svg
-      className="h-4 w-4"
+      className="h-3 w-3 sm:h-4 sm:w-4"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -46,9 +46,9 @@ const CheckmarkIcon: React.FC = () => (
 );
 
 const WhiteCheckmarkIcon: React.FC = () => (
-  <div className="h-6 w-6 text-primary mr-3 flex-shrink-0 rounded-full bg-white flex items-center justify-center">
+  <div className="h-5 w-5 sm:h-6 sm:w-6 text-primary mr-2 sm:mr-3 flex-shrink-0 rounded-full bg-white flex items-center justify-center">
     <svg
-      className="h-4 w-4"
+      className="h-3 w-3 sm:h-4 sm:w-4"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
