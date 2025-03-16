@@ -333,7 +333,7 @@ export default function Page() {
                 </a>{" "}
                 ou par{" "}
                 <a
-                  href="mailto:contact@entre-pawtes.fr"
+                  href="mailto:entrepawtes@gmail.com"
                   className="text-white hover:underline"
                 >
                   email
