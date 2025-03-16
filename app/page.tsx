@@ -472,16 +472,16 @@ export default function Page() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
             {certifications.map((cert, index) => (
               <div key={index} className="relative mt-14">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                   <Image
                     src={cert.image}
                     alt={cert.title}
-                    width={140}
-                    height={140}
+                    width={160}
+                    height={160}
                     className="object-contain drop-shadow-xl"
                   />
                 </div>
-                <div className="rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col pt-14 sm:pt-16 h-full bg-white text-gray-800">
+                <div className="rounded-lg shadow-lg sm:p-6 md:p-8 md:pt-14 flex flex-col h-full bg-white text-gray-800">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-5 text-primary">
                     {cert.title}
                   </h3>
