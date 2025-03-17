@@ -5,14 +5,17 @@ const testimonials = [
   {
     text: "Je recommande!!!! Esther est très à l'écoute des besoins de nos fidèles compagnons et du maître. Très professionnelle, Esther s'implique à 100% 👌 j'ai adopté un chiot et faire appel à ces précieux conseils a été fondamental pour instaurer le lien entre lui, mes enfants et moi.",
     name: "Delphine - Août 2024",
+    image: "/images/georgie.jpg",
   },
   {
     text: "Une éducatrice à l'écoute, dans une éducation bienveillante selon le besoin du chien. Sherlock et moi mettons en place les exercices qu'elle nous a conseillé et cela nous permet de passer des balades plus sereines.",
     name: "Anne-Sophie - Décembre 2024",
+    image: "/images/sherlock.jpg",
   },
   {
-    text: "Une éducatrice à l'écoute, dans une éducation bienveillante selon le besoin du chien. Sherlock et moi mettons en place les exercices qu'elle nous a conseillé et cela nous permet de passer des balades plus sereines.",
-    name: "Anne-Sophie Le Moullec - Mars 2025",
+    text: "Esther a été très efficace pour l'éducation de notre jeune Golden Retriever. Ses cours se déroulent tout en douceur, avec patience et une bonne connaissance de la psychologie canine. Elle nous a appris à bien nous comporter avec notre chien afin de ne pas commettre d'erreurs irréversibles. Je recommande vivement !",
+    name: "Pierre-Michel - Mars 2025",
+    image: "/images/vincent.jpg",
   },
 ];
 
@@ -74,7 +77,7 @@ const unitServices = [
       "https://cal.com/entre-pawtes/premier-appel?service=Bilan%20individuel",
   },
   {
-    title: "Balade éducative",
+    title: "Balade individuelle",
     price: "25€/h",
     features: [
       "Je promène votre chien pendant 1h",
@@ -206,11 +209,20 @@ export default function Page() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-primary text-white"
+                className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-primary text-white relative"
               >
                 <div className="text-yellow-300 mb-4 text-xl">★★★★★</div>
                 <p className="mb-5">{testimonial.text}</p>
                 <p className="mt-auto font-semibold">{testimonial.name}</p>
+                <div className="absolute bottom-4 right-4 w-13 h-13 rounded-full overflow-hidden">
+                  <Image
+                    src={testimonial.image}
+                    alt="Photo du chien"
+                    width={120}
+                    height={120}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -231,48 +243,40 @@ export default function Page() {
       <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-primary text-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
-            Mes forfaits
+            Mes services
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
-            {servicePlans.map((plan, index) => (
-              <div key={index} className="relative mt-20">
-                <div className="absolute md:-top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                  <Image
-                    src={plan.image}
-                    alt={plan.title}
-                    width={140}
-                    height={140}
-                    className="object-contain drop-shadow-xl"
-                  />
-                </div>
-                <div className="rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white text-gray-800 pt-20">
-                  <h3 className="text-2xl md:text-3xl font-black text-center mb-4 text-primary">
-                    {plan.title}
-                  </h3>
-                  <span className="text-2xl md:text-3xl font-medium text-primary text-center mb-6">
-                    {plan.price}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
+            {unitServices.map((service, index) => (
+              <div
+                key={index}
+                className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white/90 text-primary"
+              >
+                <h4 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-4 text-primary">
+                  {service.title}
+                </h4>
+                <div className="text-center mb-3 sm:mb-6">
+                  <span className="text-xl sm:text-2xl font-medium text-primary">
+                    {service.price}
                   </span>
-                  <ul className="space-y-4 mb-8">
-                    {plan.features.map((feature, i) => (
-                      <li key={i} className="flex items-start">
-                        <CheckmarkItem.Icon />
-                        <span
-                          dangerouslySetInnerHTML={{ __html: feature }}
-                        ></span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="text-center mt-auto">
-                    <a
-                      href={plan.calLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-xl text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90 w-full font-extrabold"
-                    >
-                      Choisir
-                    </a>
-                  </div>
+                </div>
+                <ul className="space-y-2 sm:space-y-4 mb-4 sm:mb-8">
+                  {service.features.map((feature, i) => (
+                    <li key={i} className="flex items-start">
+                      <CheckmarkItem.Icon />
+                      <span className="text-gray-600">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="text-center mt-auto">
+                  <a
+                    href={service.calLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-xl text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90 w-full font-extrabold"
+                  >
+                    Choisir
+                  </a>
                 </div>
               </div>
             ))}
@@ -280,67 +284,75 @@ export default function Page() {
 
           <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-24">
             <h3 className="text-2xl md:text-3xl font-black text-center mb-6 md:mb-8">
-              Mes prestations à l&apos;unité
+              Mes forfaits
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
-              {unitServices.map((service, index) => (
-                <div
-                  key={index}
-                  className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white/90 text-primary"
-                >
-                  <h4 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-4 text-primary">
-                    {service.title}
-                  </h4>
-                  <div className="text-center mb-3 sm:mb-6">
-                    <span className="text-xl sm:text-2xl font-medium text-primary">
-                      {service.price}
-                    </span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+              {servicePlans.map((plan, index) => (
+                <div key={index} className="relative mt-20">
+                  <div className="absolute md:-top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                    <Image
+                      src={plan.image}
+                      alt={plan.title}
+                      width={140}
+                      height={140}
+                      className="object-contain drop-shadow-xl"
+                    />
                   </div>
-                  <ul className="space-y-2 sm:space-y-4 mb-4 sm:mb-8">
-                    {service.features.map((feature, i) => (
-                      <li key={i} className="flex items-start">
-                        <CheckmarkItem.Icon />
-                        <span className="text-gray-600">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="text-center mt-auto">
-                    <a
-                      href={service.calLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-xl text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90 w-full font-extrabold"
-                    >
-                      Choisir
-                    </a>
+                  <div className="rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white text-gray-800 pt-20">
+                    <h3 className="text-2xl md:text-3xl font-black text-center mb-4 text-primary">
+                      {plan.title}
+                    </h3>
+                    <span className="text-2xl md:text-3xl font-medium text-primary text-center mb-6">
+                      {plan.price}
+                    </span>
+                    <ul className="space-y-4 mb-8">
+                      {plan.features.map((feature, i) => (
+                        <li key={i} className="flex items-start">
+                          <CheckmarkItem.Icon />
+                          <span
+                            dangerouslySetInnerHTML={{ __html: feature }}
+                          ></span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="text-center mt-auto">
+                      <a
+                        href={plan.calLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-xl text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90 w-full font-extrabold"
+                      >
+                        Choisir
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
+          </div>
 
-            <div className="text-center mt-8 sm:mt-10 mb-12 sm:mb-20">
-              <p className="text-sm leading-relaxed text-white/80">
-                Vous ne trouvez pas la prestation que vous recherchez ?
-                Contactez-moi via{" "}
-                <a
-                  href="https://www.instagram.com/entre_pawtes/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:underline"
-                >
-                  Instagram
-                </a>{" "}
-                ou par{" "}
-                <a
-                  href="mailto:entrepawtes@gmail.com"
-                  className="text-white hover:underline"
-                >
-                  email
-                </a>
-                .
-              </p>
-            </div>
+          <div className="text-center mt-8 sm:mt-10 mb-12 sm:mb-20">
+            <p className="text-sm leading-relaxed text-white/80">
+              Vous ne trouvez pas la prestation que vous recherchez ?
+              Contactez-moi via{" "}
+              <a
+                href="https://www.instagram.com/entre_pawtes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:underline"
+              >
+                Instagram
+              </a>{" "}
+              ou par{" "}
+              <a
+                href="mailto:entrepawtes@gmail.com"
+                className="text-white hover:underline"
+              >
+                email
+              </a>
+              .
+            </p>
           </div>
 
           <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden gap-4 sm:gap-8 md:gap-12">
