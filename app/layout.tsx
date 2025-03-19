@@ -12,9 +12,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Entre Pawtes",
-  description: "Éducatrice comportementaliste canine à Lille",
+  title: "Entre Pawtes | Éducatrice comportementaliste canine à Lille",
+  description:
+    "Entre Pawtes propose des services d'éducation et de comportementalisme canin sur Lille et ses alentours. Bilans comportementaux, cours individuels et balades.",
+  keywords: [
+    "éducateur canin",
+    "comportementaliste canin",
+    "dressage chien",
+    "Lille",
+    "Nord",
+  ],
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
+  openGraph: {
+    title: "Entre Pawtes | Éducatrice comportementaliste canine à Lille",
+    description:
+      "Entre Pawtes propose des services d'éducation et de comportementalisme canin sur Lille et sa région.",
+    url: "https://www.entre-pawtes.fr",
+    siteName: "Entre Pawtes",
+    locale: "fr_FR",
+    type: "website",
+    images: [
+      {
+        url: "https://www.entre-pawtes.fr/images/qui-suis-je.webp",
+        width: 1500,
+        height: 1000,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

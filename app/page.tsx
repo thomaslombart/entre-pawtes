@@ -137,7 +137,7 @@ export default function Page() {
           <div className="flex flex-col gap-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black">
               <span className="block mb-3">Moi c&apos;est Esther,</span>
-              <span className="bg-teal-100 text-teal-900 px-3 py-1 rounded-lg inline md:inline-block">
+              <span className="bg-amber-100 text-amber-900 px-3 py-1 rounded-lg inline md:inline-block">
                 Éducatrice comportementaliste canine à Lille
               </span>
             </h1>
@@ -149,7 +149,7 @@ export default function Page() {
                 apprendre à communiquer efficacement avec lui, à l&apos;intégrer
                 harmonieusement dans votre quotidien et à établir une relation
                 au top avec lui, le tout dans la{" "}
-                <span className="bg-teal-100 text-teal-900 px-1 py-0.5 font-semibold rounded-sm">
+                <span className="bg-amber-100 text-amber-900 px-1 py-0.5 font-semibold rounded-sm">
                   positivité et la bienveillance.
                 </span>{" "}
               </p>
