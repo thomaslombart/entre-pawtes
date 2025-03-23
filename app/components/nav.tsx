@@ -9,7 +9,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-xl">
-      <nav className="flex justify-between items-center px-4 md:px-18">
+      <nav className="flex justify-between items-center px-4 md:px-18 py-2">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/entre-pawtes.png"
@@ -50,21 +50,51 @@ export function Navbar() {
           </svg>
         </button>
 
-        <Link
-          href="https://cal.com/entre-pawtes/premier-appel"
-          className="hidden md:block bg-amber-900 text-white hover:bg-amber-900/90 font-bold py-2 px-4 md:py-4 md:px-8 rounded-lg md:rounded-none transition-colors"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Prendre RDV
-        </Link>
+        <div className="hidden md:flex items-center gap-6">
+          <Link
+            href="/#services"
+            className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+          >
+            Mes services
+          </Link>
+          <Link
+            href="/qui-suis-je"
+            className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+          >
+            Qui suis-je ?
+          </Link>
+          <Link
+            href="https://cal.com/entre-pawtes/premier-appel"
+            className="bg-amber-900 text-white hover:bg-amber-800 font-bold py-2 px-6 rounded-full relative 
+            before:hidden md:before:block before:absolute before:inset-[-2px] before:rounded-full before:animate-pulse before:bg-amber-600/70 
+            before:blur-md before:-z-10 transition-all"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Prendre RDV
+          </Link>
+        </div>
 
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden z-50">
-            <div className="flex flex-col p-4">
+            <div className="flex flex-col p-4 space-y-5">
+              <Link
+                href="/#services"
+                className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Mes services
+              </Link>
+              <Link
+                href="/qui-suis-je"
+                className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Qui suis-je ?
+              </Link>
               <Link
                 href="https://cal.com/entre-pawtes/premier-appel"
-                className="bg-amber-900 text-white hover:bg-amber-900/90 font-bold py-3 px-4 rounded-lg transition-colors text-center"
+                className="bg-amber-900 text-white hover:bg-amber-800 font-bold py-2 px-6 rounded-full transition-all text-center"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
