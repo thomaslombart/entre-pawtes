@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import { motion, HTMLMotionProps } from "framer-motion";
+import { ReactNode } from "react";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends HTMLMotionProps<"button"> {
   children: ReactNode;
   href?: string;
   isExternal?: boolean;
@@ -15,6 +15,7 @@ export default function Button({
   children,
   href,
   isExternal = false,
+  className,
   ...props
 }: ButtonProps) {
   const springAnimation = {
@@ -39,7 +40,7 @@ export default function Button({
   };
 
   const buttonClasses = `bg-amber-900 text-white hover:bg-amber-800 font-bold py-4 px-8 rounded-full transition-all ${
-    props.className || ""
+    className || ""
   }`;
 
   if (href) {
@@ -57,7 +58,7 @@ export default function Button({
     );
   }
   return (
-    <motion.button {...props} {...springAnimation} className={buttonClasses}>
+    <motion.button {...springAnimation} {...props} className={buttonClasses}>
       {children}
     </motion.button>
   );
