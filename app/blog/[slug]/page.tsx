@@ -22,8 +22,7 @@ export default async function Page({
       prose-h3:text-xl sm:prose-h3:text-2xl md:prose-h3:text-3xl 
       prose-h4:text-lg sm:prose-h4:text-xl md:prose-h4:text-2xl 
       prose-h5:text-base sm:prose-h5:text-lg md:prose-h5:text-xl 
-      prose-h6:text-sm sm:prose-h6:text-base md:prose-h6:text-lg 
-      dark:prose-headings:text-white"
+      prose-h6:text-sm sm:prose-h6:text-base md:prose-h6:text-lg"
     >
       <Post />
     </div>
