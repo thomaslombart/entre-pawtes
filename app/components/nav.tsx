@@ -8,7 +8,7 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-xl">
+    <header className="sticky top-0 z-50 bg-white shadow-lg">
       <nav className="flex justify-between items-center px-4 md:px-18 py-2">
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -53,13 +53,19 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-6">
           <Link
             href="/#services"
-            className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+            className="text-black hover:underline font-medium transition-colors"
           >
             Mes services
           </Link>
           <Link
+            href="/blog"
+            className="text-black hover:underline font-medium transition-colors"
+          >
+            Blog
+          </Link>
+          <Link
             href="/qui-suis-je"
-            className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+            className="text-black hover:underline font-medium transition-colors"
           >
             Qui suis-je ?
           </Link>
@@ -84,6 +90,13 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Mes services
+              </Link>
+              <Link
+                href="/blog"
+                className="text-gray-800 hover:text-primary font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </Link>
               <Link
                 href="/qui-suis-je"

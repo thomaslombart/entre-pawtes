@@ -1,4 +1,4 @@
-import CheckmarkIcon from "@/components/CheckmarkIcon";
+import CheckmarkIcon from "@/app/components/CheckmarkIcon";
 import Image from "next/image";
 
 const testimonials = [
