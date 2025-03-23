@@ -263,7 +263,7 @@ export default function Page() {
             {unitServices.map((service, index) => (
               <div
                 key={index}
-                className="rounded-2xl shadow-md p-7 md:p-8 flex flex-col gap-9 h-full bg-white text-primary"
+                className="rounded-2xl shadow-md p-7 md:p-8 flex flex-col gap-9 h-full bg-white"
               >
                 <div>
                   <h3 className="text-xl md:text-2xl font-black text-center mb-4 text-primary">
@@ -277,7 +277,7 @@ export default function Page() {
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <CheckmarkIcon />
-                      <span className="text-gray-600">{feature}</span>
+                      <span className="text-gray-800">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -307,7 +307,7 @@ export default function Page() {
                       className="object-contain drop-shadow-xl"
                     />
                   </div>
-                  <div className="rounded-2xl shadow-lg p-6 pt-16 md:p-10 flex flex-col h-full bg-white text-gray-800 ">
+                  <div className="rounded-2xl shadow-lg p-7 pt-16 md:p-10 flex flex-col h-full bg-white text-black">
                     <h3 className="text-2xl md:text-3xl font-black text-center mb-4 text-primary">
                       {plan.title}
                     </h3>
