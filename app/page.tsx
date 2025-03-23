@@ -1,5 +1,5 @@
+import CheckmarkIcon from "@/components/CheckmarkIcon";
 import Image from "next/image";
-import CheckmarkItem from "@/components/CheckmarkItem";
 
 const testimonials = [
   {
@@ -189,29 +189,62 @@ export default function Page() {
             </div>
 
             <ul className="space-y-4 w-full md:w-1/2">
-              <CheckmarkItem
-                emoji="🔍"
-                title="Une approche personnalisée et bienveillante"
-                description="Chaque chien est unique, c'est pourquoi j'adapte mes méthodes à sa personnalité en utilisant exclusivement des techniques respectueuses basées sur la récompense et le renforcement positif."
-              />
+              <li className="flex items-start">
+                <span className="h-8 w-8 mr-3 flex-shrink-0 text-xl flex items-center justify-center">
+                  🔍
+                </span>
+                <div>
+                  <h3 className="text-lg font-bold text-primary mb-1">
+                    Une approche personnalisée et bienveillante
+                  </h3>
+                  <p className="text-sm sm:text-base">
+                    Chaque chien est unique, c&apos;est pourquoi j&apos;adapte
+                    mes méthodes à sa personnalité en utilisant exclusivement
+                    des techniques respectueuses basées sur la récompense et le
+                    renforcement positif.
+                  </p>
+                </div>
+              </li>
 
-              <CheckmarkItem
-                emoji="📋"
-                title="Un accompagnement complet"
-                description="Je ne me limite pas au temps passé ensemble : je vous fournis des outils personnalisés, des fiches pratiques et un suivi adapté pour continuer le travail efficacement à la maison."
-              />
+              <li className="flex items-start">
+                <span className="h-8 w-8 mr-3 flex-shrink-0 text-xl flex items-center justify-center">
+                  📋
+                </span>
+                <div>
+                  <h3 className="text-lg font-bold text-primary mb-1">
+                    Un accompagnement complet
+                  </h3>
+                  <p className="text-sm sm:text-base">
+                    Je ne me limite pas au temps passé ensemble : je vous
+                    fournis des outils personnalisés, des fiches pratiques et un
+                    suivi adapté pour continuer le travail efficacement à la
+                    maison.
+                  </p>
+                </div>
+              </li>
 
-              <CheckmarkItem
-                emoji="🤝"
-                title="Une relation de confiance durable"
-                description="Mon objectif est de créer un lien solide entre vous et votre chien, basé sur la compréhension mutuelle et le respect, pour une harmonie qui dure dans le temps et une intégration harmonieuse dans votre quotidien."
-              />
+              <li className="flex items-start">
+                <span className="h-8 w-8 mr-3 flex-shrink-0 text-xl flex items-center justify-center">
+                  🤝
+                </span>
+                <div>
+                  <h3 className="text-lg font-bold text-primary mb-1">
+                    Une relation de confiance durable
+                  </h3>
+                  <p className="text-sm sm:text-base">
+                    Mon objectif est de créer un lien solide entre vous et votre
+                    chien, basé sur la compréhension mutuelle et le respect,
+                    pour une harmonie qui dure dans le temps et une intégration
+                    harmonieuse dans votre quotidien.
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
 
-          <h3 className="text-2xl md:text-3xl font-black text-center mb-6 md:mb-8 text-primary mt-8 sm:mt-12 md:mt-16 lg:mt-24">
+          <h2 className="text-2xl md:text-3xl font-black text-center mb-6 md:mb-8 text-primary mt-8 sm:mt-12 md:mt-16 lg:mt-24">
             Mes avis
-          </h3>
+          </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
             {testimonials.map((testimonial, index) => (
@@ -271,7 +304,7 @@ export default function Page() {
                 <ul className="space-y-2 sm:space-y-4 mb-4 sm:mb-8">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckmarkItem.Icon />
+                      <CheckmarkIcon />
                       <span className="text-gray-600">{feature}</span>
                     </li>
                   ))}
@@ -317,7 +350,7 @@ export default function Page() {
                     <ul className="space-y-4 mb-8">
                       {plan.features.map((feature, i) => (
                         <li key={i} className="flex items-start">
-                          <CheckmarkItem.Icon />
+                          <CheckmarkIcon />
                           <span
                             dangerouslySetInnerHTML={{ __html: feature }}
                           ></span>
@@ -348,14 +381,14 @@ export default function Page() {
                 href="https://www.instagram.com/entre_pawtes/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:underline"
+                className="text-white font-semibold hover:text-amber-100 transition-colors"
               >
                 Instagram
               </a>{" "}
               ou par{" "}
               <a
                 href="mailto:entrepawtes@gmail.com"
-                className="text-white hover:underline"
+                className="text-white font-semibold hover:text-amber-100 transition-colors"
               >
                 email
               </a>
