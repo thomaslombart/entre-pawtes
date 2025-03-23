@@ -6,16 +6,19 @@ const testimonials = [
     text: "Je recommande!!!! Esther est très à l'écoute des besoins de nos fidèles compagnons et du maître. Très professionnelle, Esther s'implique à 100% 👌 j'ai adopté un chiot et faire appel à ces précieux conseils a été fondamental pour instaurer le lien entre lui, mes enfants et moi.",
     name: "Delphine - Août 2024",
     image: "/images/georgie.jpg",
+    alt: "",
   },
   {
     text: "Une éducatrice à l'écoute, dans une éducation bienveillante selon le besoin du chien. Sherlock et moi mettons en place les exercices qu'elle nous a conseillé et cela nous permet de passer des balades plus sereines.",
     name: "Anne-Sophie - Décembre 2024",
     image: "/images/sherlock.jpg",
+    alt: "",
   },
   {
     text: "Esther a été très efficace pour l'éducation de notre jeune Golden Retriever. Ses cours se déroulent tout en douceur, avec patience et une bonne connaissance de la psychologie canine. Elle nous a appris à bien nous comporter avec notre chien afin de ne pas commettre d'erreurs irréversibles. Je recommande vivement !",
     name: "Pierre-Michel - Mars 2025",
     image: "/images/vincent.jpg",
+    alt: "",
   },
 ];
 
@@ -24,6 +27,7 @@ const servicePlans = [
     title: "Un bon pawte",
     price: "350€",
     image: "/images/bon-pawte.png",
+    alt: "",
     features: [
       "Kit de bienvenue d'une valeur de <strong>25€</strong>",
       "Bilan complet (1h30 à 2h00)",
@@ -39,6 +43,7 @@ const servicePlans = [
     title: "Un pawte au top",
     price: "450€",
     image: "/images/pawte-top.png",
+    alt: "",
     features: [
       "<strong>Le contenu du forfait classique +…</strong>",
       "Suivi par message avec réponse garantie en 48h",
@@ -98,6 +103,7 @@ const certifications = [
       "Une <strong>attestation reconnue par l'État</strong> garantissant mes connaissances en éducation canine et comportement animal.",
       "<strong>Formation obligatoire</strong> pour exercer professionnellement auprès des chiens, validant mes compétences en matière de <strong>bien-être animal</strong>.",
     ],
+    alt: "",
   },
   {
     title: "Vox Animae",
@@ -106,6 +112,7 @@ const certifications = [
       "Formation certifiée <strong>Qualiopi</strong> dispensée par un organisme reconnu prônant le <strong>respect de l'animal et de ses émotions</strong>.",
       "<strong>Formation d'un an</strong> alliant théorie et pratique sur l'éducation et le comportement du chien avec une approche bienveillante.",
     ],
+    alt: "",
   },
   {
     title: "Compétences émotionnelles du chien",
@@ -114,6 +121,7 @@ const certifications = [
       "Formation spécialisée sur l'acquisition de <strong>l'autonomie</strong>, de <strong>l'autocontrôle</strong> et la gestion des émotions comme la frustration et l'anxiété.",
       "Techniques pour comprendre les besoins exprimés par les comportements difficiles et <strong>renforcer la confiance</strong> entre le chien et l'humain.",
     ],
+    alt: "",
   },
 ];
 
@@ -217,7 +225,7 @@ export default function Page() {
                 <div className="absolute bottom-4 right-4 w-13 h-13 rounded-full overflow-hidden">
                   <Image
                     src={testimonial.image}
-                    alt="Photo du chien"
+                    alt={testimonial.alt}
                     width={120}
                     height={120}
                     className="object-cover w-full h-full"
