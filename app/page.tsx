@@ -260,9 +260,9 @@ export default function Page() {
                 key={index}
                 className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white/90 text-primary"
               >
-                <h4 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-4 text-primary">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-4 text-primary">
                   {service.title}
-                </h4>
+                </h3>
                 <div className="text-center mb-3 sm:mb-6">
                   <span className="text-xl sm:text-2xl font-medium text-primary">
                     {service.price}
