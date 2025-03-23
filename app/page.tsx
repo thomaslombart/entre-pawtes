@@ -131,7 +131,7 @@ export default function Page() {
           sizes="100vw"
         />
 
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="absolute inset-0 px-4 sm:px-6 md:px-12 lg:px-24 flex items-center text-white">
           <div className="flex flex-col gap-6">

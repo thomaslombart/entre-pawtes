@@ -18,9 +18,15 @@ export default function Footer() {
               <p>Éducatrice comportementaliste canine à Lille</p>
               <a
                 href="mailto:entrepawtes@gmail.com"
-                className="flex items-center justify-center sm:justify-start text-primary font-semibold hover:underline"
+                className="flex items-center justify-center sm:justify-start hover:text-primary hover:underline transition-colors"
               >
                 entrepawtes@gmail.com
+              </a>
+              <a
+                href="tel:+33771713043"
+                className="flex items-center justify-center sm:justify-start hover:text-primary hover:underline transition-colors"
+              >
+                07 71 71 30 43
               </a>
             </div>
           </div>
@@ -32,7 +38,7 @@ export default function Footer() {
                 href="https://www.instagram.com/entre_pawtes/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center md:justify-end hover:text-primary transition-colors"
+                className="flex items-center justify-center md:justify-end hover:text-primary hover:underline transition-colors"
               >
                 <span className="mr-2">@entre_pawtes</span>
                 <Image
@@ -46,7 +52,7 @@ export default function Footer() {
                 href="https://www.youtube.com/@esther-entrepawtes"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center md:justify-end hover:text-primary transition-colors"
+                className="flex items-center justify-center md:justify-end hover:text-primary hover:underline transition-colors"
               >
                 <span className="mr-2">Esther</span>
                 <svg className="w-6 h-6" fill="red" viewBox="0 0 24 24">
