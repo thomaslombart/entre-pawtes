@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Metadata } from "next";
 
 const certifications = [
   {
@@ -29,6 +30,25 @@ const certifications = [
     alt: "",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Qui suis-je | Entre Pawtes",
+  description:
+    "Découvrez mon parcours en tant qu'éducatrice comportementaliste canine à Lille.",
+  openGraph: {
+    title: "Qui suis-je | Entre Pawtes",
+    description:
+      "Découvrez mon parcours en tant qu'éducatrice comportementaliste canine à Lille",
+    url: "https://www.entre-pawtes.fr/qui-suis-je",
+    images: [
+      {
+        url: "https://www.entre-pawtes.fr/images/qui-suis-je.webp",
+        width: 1500,
+        height: 1000,
+      },
+    ],
+  },
+};
 
 export default function About() {
   return (

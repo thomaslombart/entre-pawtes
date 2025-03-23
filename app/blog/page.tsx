@@ -1,6 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getBlogPosts } from "../lib/blog";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog | Entre Pawtes",
+  description:
+    "Découvrez mes articles sur l'éducation et le comportement canin",
+  openGraph: {
+    title: "Blog | Entre Pawtes",
+    description:
+      "Découvrez mes articles sur l'éducation et le comportement canin",
+    url: "https://www.entre-pawtes.fr/blog",
+  },
+};
 
 export default function BlogIndex() {
   const posts = getBlogPosts();

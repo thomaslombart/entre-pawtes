@@ -1,14 +1,16 @@
-import React from "react";
 import fs from "fs";
 import path from "path";
+import matter from "gray-matter";
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+type Params = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
+export default async function BlogPost({ params }: Params) {
   const { slug } = await params;
-  const { default: Post } = await import(`@/content/${slug}.mdx`);
+  const { default: Content } = await import(`@/content/${slug}.mdx`);
 
   return (
     <div
@@ -24,14 +26,13 @@ export default async function Page({
       prose-h5:text-base md:prose-h5:text-lg md:prose-h5:text-xl 
       prose-h6:text-md md:prose-h6:text-base md:prose-h6:text-lg"
     >
-      <Post />
+      <Content />
     </div>
   );
 }
 
 export function generateStaticParams() {
   const contentDir = path.join(process.cwd(), "content");
-
   const files = fs.readdirSync(contentDir);
 
   return files
@@ -42,3 +43,22 @@ export function generateStaticParams() {
 }
 
 export const dynamicParams = false;
+
+export async function generateMetadata({ params }: Params) {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), "content", `${slug}.mdx`);
+  const { data } = matter(fs.readFileSync(filePath, "utf8"));
+
+  return {
+    title: `${data.title} | Entre Pawtes`,
+    description: data.description,
+    openGraph: {
+      title: `${data.title} | Entre Pawtes`,
+      description: data.description,
+      url: `https://www.entre-pawtes.fr/blog/${slug}`,
+      type: "article",
+      publishedTime: data.date,
+      modifiedTime: data.lastUpdated,
+    },
+  };
+}
