@@ -263,7 +263,7 @@ export default function Page() {
             {unitServices.map((service, index) => (
               <div
                 key={index}
-                className="rounded-2xl shadow-md p-6 md:p-8 flex flex-col gap-9 h-full bg-white text-primary"
+                className="rounded-2xl shadow-md p-7 md:p-8 flex flex-col gap-9 h-full bg-white text-primary"
               >
                 <div>
                   <h3 className="text-xl md:text-2xl font-black text-center mb-4 text-primary">
