@@ -12,8 +12,8 @@ export default async function Page({
 
   return (
     <div
-      className="py-6 sm:py-8 md:py-10 px-3 sm:px-4 max-w-full sm:max-w-2xl md:max-w-3xl mx-auto 
-      prose prose-sm sm:prose md:prose-md lg:prose-lg leading-relaxed
+      className="py-6 sm:py-8 md:py-10 px-4 md:px-0 max-w-full sm:max-w-2xl md:max-w-3xl mx-auto 
+      prose prose-base sm:prose md:prose-md lg:prose-lg leading-relaxed
       prose-headings:mt-6 sm:prose-headings:mt-8 prose-headings:font-bold prose-headings:text-black 
       prose-h1:font-extrabold 
       prose-p:my-4 sm:prose-p:my-5 prose-li:my-1

@@ -2,14 +2,14 @@ import Link from "next/link";
 import { ReactNode } from "react";
 export default function Canigourmand({ children }: { children?: ReactNode }) {
   return (
-    <div className="my-4 rounded-lg bg-blue-100 p-5 md:p-7 not-prose text-blue-900 leading-normal">
+    <div className="my-4 rounded-lg bg-blue-50 p-5 md:p-7 not-prose text-blue-900 leading-normal">
       <div className="flex flex-col md:flex-row items-start gap-4">
         <svg
           width="24"
           height="24"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
-          className="flex-shrink-0 w-8 h-8"
+          className="flex-shrink-0 w-8 h-8 hidden md:block"
         >
           <g
             fill="none"
