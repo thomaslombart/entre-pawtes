@@ -1,0 +1,993 @@
+[
+  {
+    "name": "Cous de poulet Canigourmand",
+    "description": "Friandise naturelle à base de cous de poulet séchés, sans céréales ni additifs. Texture croquante idéale pour la santé dentaire, riche en protéines et faible en matières grasses.",
+    "benefits": [
+      "Aide à l'hygiène dentaire",
+      "Réduit le tartre",
+      "Renforce les gencives",
+      "Riche en protéines",
+      "Soutien musculaire",
+      "Contrôle du poids"
+    ],
+    "price": "ok",
+    "time": "court",
+    "smell": 1,
+    "type": "poulet",
+    "advices": [
+      "Peut être utilisé comme récompense pendant l'éducation",
+      "Peut être caché dans un tapis de fouille pour plus de stimulation",
+      "Se conserve environ 9 mois"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["fin gourmet", "en surpoids", "chiot", "actif"],
+    "url": "https://www.canigourmand.com/mastication/40-3133-cou-de-poulet.html#/36-format-500g/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4523-medium_default/cou-de-poulet.jpg"
+  },
+  {
+    "name": "Pattes de poulet Cani Gourmand",
+    "description": "Friandises naturelles plus grosses que les cous de poulet, idéales comme récompense après l'effort. 100% naturelles et sans additifs, elles conviennent pour la mastication et l'hygiène dentaire.",
+    "benefits": [
+      "Entretien de l'hygiène bucco-dentaire",
+      "Riche en protéines",
+      "Faible en matières grasses"
+    ],
+    "price": "ok",
+    "time": ["court", "moyen"],
+    "smell": 1,
+    "type": "poulet",
+    "advices": [
+      "Parfait comme récompense après l'effort",
+      "Issues d'élevage européen",
+      "Les formes peuvent varier d'une friandise à l'autre"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien actif"],
+    "url": "https://www.canigourmand.com/mastication/41-3146-patte-de-poulet.html#/35-format-200g/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4282-medium_default/patte-de-poulet.jpg"
+  },
+  {
+    "name": "Masque de boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base de masque de boeuf séché, offrant une longue expérience de mastication. Riche en protéines et faible en matières grasses, parfaite pour l'occupation et l'hygiène dentaire.",
+    "benefits": [
+      "Aide à l'hygiène bucco-dentaire",
+      "Élimine la plaque dentaire et le tartre",
+      "Riche en protéines",
+      "Faible en matières grasses"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 3,
+    "type": "boeuf",
+    "advices": [
+      "Surveiller la première dégustation",
+      "Parfait pour les moments d'absence",
+      "Idéal pour occuper le chien sur une longue période"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien actif", "chiot", "masticateur efficace"],
+    "url": "https://www.canigourmand.com/mastication/1087-3154-friandise-masque-boeuf-chien.html#/35-format-200g/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4153-medium_default/friandise-masque-boeuf-chien.jpg"
+  },
+  {
+    "name": "Oreilles de boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base d'oreilles de boeuf, sans céréales ni additifs. Texture croquante et fondante idéale pour l'hygiène dentaire et la réduction du stress.",
+    "benefits": [
+      "Réduit la plaque et le tartre",
+      "Stimule les gencives",
+      "Soulage le stress et l'anxiété",
+      "Aide à la digestion",
+      "Très riche en protéines",
+      "Très faible en matières grasses"
+    ],
+    "price": "ok",
+    "time": "moyen",
+    "smell": 1,
+    "type": "boeuf",
+    "advices": [
+      "Parfait pour les moments de stress",
+      "Idéal comme activité récréative après une promenade",
+      "Peut être donné une fois par semaine pour l'hygiène dentaire",
+      "Convient aux chiots pour soulager les douleurs dentaires",
+      "Issues d'élevages européens"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien actif", "fin gourmet", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/24-2981-oreille-de-boeuf.html#/238-lot-x_20/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4146-medium_default/oreille-de-boeuf.jpg"
+  },
+  {
+    "name": "Oreilles de cochon Canigourmand",
+    "description": "Friandise 100% naturelle composée d'oreilles de cochon séchées, sans céréales ni additifs. Texture croustillante idéale pour l'hygiène dentaire et l'occupation, particulièrement adaptée aux chiens sensibles.",
+    "benefits": [
+      "Réduit la plaque et le tartre",
+      "Renforce les gencives",
+      "Stimule la salivation",
+      "Riche en protéines",
+      "Riche en collagène naturel",
+      "Facile à digérer"
+    ],
+    "price": "ok",
+    "time": ["moyen", "long"],
+    "smell": 3,
+    "type": "cochon",
+    "advices": [
+      "Parfait pour réduire les comportements destructeurs",
+      "Idéal pour les chiens sensibles ou allergiques au boeuf/poulet",
+      "Convient aux chiots en dentition",
+      "Alternative aux lamelles dentaires industrielles",
+      "Testé pendant 4-6 mois avant commercialisation"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien actif", "fin gourmet"],
+    "url": "https://www.canigourmand.com/mastication/403-2988-oreille-de-cochon-3760361282473.html#/127-lot-x_5/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4378-medium_default/oreille-de-cochon.jpg"
+  },
+  {
+    "name": "Sabots Canigourmand",
+    "description": "Friandise 100% naturelle fabriquée à partir de cornes de jeunes bovins, sans céréales ni additifs. Très durable, idéale pour une longue mastication et l'hygiène dentaire.",
+    "benefits": [
+      "Élimine la plaque dentaire et le tartre",
+      "Stimule la salivation",
+      "Renforce dents et gencives",
+      "Très riche en protéines",
+      "Très faible en matières grasses",
+      "Réduit le stress et l'anxiété"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 5,
+    "type": "boeuf",
+    "advices": [
+      "Surveiller les premières utilisations",
+      "Garder de l'eau fraîche à disposition",
+      "Peut être conservé au congélateur",
+      "Peut être transformé en friandise glacée",
+      "Dure plusieurs jours voire semaines",
+      "Provient de jeunes bovins européens"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": [
+      "chien actif",
+      "chien sensible",
+      "masticateur efficace",
+      "tendance à grossir"
+    ],
+    "url": "https://www.canigourmand.com/mastication/22-3176-sabot-veau.html#/127-lot-x_5/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4265-medium_default/sabot-veau.jpg"
+  },
+  {
+    "name": "Peaux de cerf Canigourmand",
+    "description": "Friandise 100% naturelle à base de peau de cerf séchée à l'air, sans céréales ni additifs. Texture robuste mais souple, idéale pour une mastication longue durée et parfaitement adaptée aux chiens sensibles.",
+    "benefits": [
+      "Réduit le tartre",
+      "Nettoie les dents",
+      "Très riche en protéines",
+      "Faible en matières grasses",
+      "Hypoallergénique",
+      "Libère des endorphines anti-stress"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 3,
+    "type": "gibier",
+    "advices": [
+      "Peut être caché pour la chasse au trésor",
+      "Utilisable dans un jouet distributeur",
+      "Peut être congelé avec de la pâtée",
+      "Alternative pour les chiens intolérants au boeuf/poulet",
+      "Parfait pour les chiots en dentition",
+      "Issues d'élevages européens"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": ["chien actif", "fin gourmet", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/32-3006-peau-de-cerf.html#/35-format-200g/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4668-medium_default/peau-de-cerf.jpg"
+  },
+  {
+    "name": "Fromage à mâcher Canigourmand",
+    "description": "Friandise végétarienne fabriquée en Belgique à base de lait de vache, inspirée des recettes de l'Himalaya. Texture dure et résistante, idéale pour une longue mastication et l'hygiène dentaire.",
+    "benefits": [
+      "Réduit la plaque dentaire et le tartre",
+      "Améliore l'haleine",
+      "Riche en protéines",
+      "Riche en calcium",
+      "Faible en matières grasses",
+      "Hypoallergénique",
+      "Faible en lactose"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 1,
+    "type": "vege",
+    "advices": [
+      "Les petits bouts peuvent être passés au micro-ondes pour les rendre croustillants",
+      "Parfait pendant le télétravail ou les moments calmes",
+      "Idéal pour les moments de stress",
+      "Existe en différentes tailles (XS à XXL)",
+      "À conserver dans un endroit frais et sec",
+      "Fabriqué à la main en Belgique"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": [
+      "chien actif",
+      "chien sensible",
+      "chiot",
+      "fin gourmet",
+      "masticateur efficace",
+      "tendance à grossir"
+    ],
+    "url": "https://www.canigourmand.com/mastication/1016-2523-fromage-a-macher.html#/258-taille-m",
+    "image": "https://www.canigourmand.com/4671-medium_default/fromage-a-macher.jpg"
+  },
+  {
+    "name": "Oreilles de lapin Canigourmand",
+    "description": "Friandise 100% naturelle avec poils, sans céréales ni additifs. Texture craquante idéale pour l'hygiène dentaire, particulièrement adaptée aux chiens sensibles.",
+    "benefits": [
+      "Assainit et renforce les gencives",
+      "Renforce les dents",
+      "Les poils agissent comme vermifuge naturel",
+      "Très riche en protéines",
+      "Très faible en matières grasses",
+      "Facile à digérer"
+    ],
+    "price": "ok",
+    "time": ["court", "moyen"],
+    "smell": 5,
+    "type": "lapin",
+    "advices": [
+      "Convient aussi aux chats (2 fois par semaine max)",
+      "Parfait pour les chiens ayant des intolérances",
+      "Idéal pour les chiens ayant des problèmes de digestion",
+      "Issues d'élevages européens",
+      "Les formes peuvent varier d'une friandise à l'autre"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien sensible", "fin gourmet", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/48-2999-oreille-de-lapin.html#/36-format-500g/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4253-medium_default/oreille-de-lapin.jpg"
+  },
+  {
+    "name": "Peaux d'esturgeon coupées Canigourmand",
+    "description": "Friandise 100% naturelle à base de peau d'esturgeon, découpée en morceaux de 10-20cm. Sans céréales ni additifs, riche en oméga-3, particulièrement adaptée aux petits chiens et chiots.",
+    "benefits": [
+      "Réduit le tartre",
+      "Nettoie les dents",
+      "Renforce les muscles de la mâchoire",
+      "Riche en oméga-3",
+      "Riche en protéines",
+      "Hypoallergénique",
+      "Facile à digérer"
+    ],
+    "price": "ok",
+    "time": "court",
+    "smell": 5,
+    "type": "poisson",
+    "advices": [
+      "Format adapté aux petites mâchoires",
+      "Portions faciles à contrôler",
+      "Fabriqué en Dordogne à moins de 10km de l'atelier",
+      "Séchage naturel sans traitement chimique",
+      "Les formes et couleurs peuvent varier",
+      "Idéal pour les chiens sensibles ou allergiques"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": ["chien sensible", "chiot", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/1259-3168-peaux-d-esturgeon-coupees-friandise-naturelle-chien-made-in-france.html#/245-format-70g/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4794-medium_default/peaux-d-esturgeon-coupees-friandise-naturelle-chien-made-in-france.jpg"
+  },
+  {
+    "name": "Peaux de sanglier Canigourmand",
+    "description": "Friandise 100% naturelle à base de peau de sanglier, disponible en différentes tailles. Texture ultra résistante et dure, idéale pour les grands masticateurs et l'hygiène dentaire.",
+    "benefits": [
+      "Entretien de l'hygiène bucco-dentaire",
+      "Très riche en protéines",
+      "Texture ultra résistante",
+      "Forte appétence",
+      "Idéal pour chiens actifs",
+      "Qualité et traçabilité garanties"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 4,
+    "type": "gibier",
+    "advices": [
+      "Parfait pour les chiens pratiquant une activité physique",
+      "Idéal pour les grands masticateurs",
+      "Issues d'élevages européens",
+      "Séchage réalisé en Europe",
+      "Les formes peuvent varier d'une friandise à l'autre"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": ["chien actif", "masticateur efficace"],
+    "url": "https://www.canigourmand.com/mastication/38-2584-peau-de-sanglier.html#/35-format-200g",
+    "image": "https://www.canigourmand.com/4667-medium_default/peau-de-sanglier.jpg"
+  },
+  {
+    "name": "Peaux de cochon Canigourmand",
+    "description": "Friandise 100% naturelle à base de peau de cochon séchée de 25cm, sans céréales ni additifs. Texture unique qui favorise une mastication naturelle, idéale pour l'hygiène dentaire.",
+    "benefits": [
+      "Nettoie les dents",
+      "Réduit le tartre et la plaque dentaire",
+      "Améliore l'haleine",
+      "Très riche en protéines",
+      "Faible en matières grasses",
+      "Propriétés abrasives naturelles"
+    ],
+    "price": "ok",
+    "time": "moyen",
+    "smell": 1,
+    "type": "cochon",
+    "advices": [
+      "Favorise une mastication naturelle",
+      "Issues d'élevages européens",
+      "Les formes peuvent varier d'une friandise à l'autre",
+      "100% naturel et authentique",
+      "Texture unique qui éveille l'intérêt"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": ["chien actif", "chiot", "masticateur efficace"],
+    "url": "https://www.canigourmand.com/friandises-naturelles-chien/1159-2565-peau-de-cochon-25cm.html#/35-format-200g",
+    "image": "https://www.canigourmand.com/3960-medium_default/peau-de-cochon-25cm.jpg"
+  },
+  {
+    "name": "Cous de canard Canigourmand",
+    "description": "Friandise 100% naturelle à base de cous de canard, sans céréales ni additifs. Texture croustillante idéale pour l'hygiène dentaire, riche en protéines et faible en matières grasses, particulièrement adaptée aux chiens sensibles.",
+    "benefits": [
+      "Renforce dents et gencives",
+      "Nettoie la plaque dentaire",
+      "Très riche en protéines (53.7%)",
+      "Faible en matières grasses (7.56%)",
+      "Facilement digestible",
+      "Idéal pour chiens sensibles",
+      "Soutient la croissance musculaire"
+    ],
+    "price": "ok",
+    "time": "court",
+    "smell": 3,
+    "type": "canard",
+    "advices": [
+      "Disponible en format 200g (petits chiens) et 500g (grands chiens)",
+      "Parfait comme récompense après l'effort",
+      "Peut être utilisé dans des jeux de recherche olfactive",
+      "Issues d'élevages européens",
+      "Séchage réalisé en Europe",
+      "Les formes peuvent varier d'une friandise à l'autre"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien sensible", "fin gourmet"],
+    "url": "https://www.canigourmand.com/mastication/111-200-cou-de-canard.html#/36-format-500g",
+    "image": "https://www.canigourmand.com/4252-medium_default/cou-de-canard.jpg"
+  },
+  {
+    "name": "Tendons de boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base de tendons de boeuf séchés à l'air chaud, sans céréales ni additifs. Riche en collagène et en protéines, idéale pour la santé dentaire et articulaire.",
+    "benefits": [
+      "Réduit la plaque et le tartre",
+      "Renforce les mâchoires",
+      "Très riche en protéines (84.80%)",
+      "Faible en matières grasses (7.5%)",
+      "Riche en collagène",
+      "Favorise la santé des articulations",
+      "Soutient la santé de la peau"
+    ],
+    "price": "ok",
+    "time": ["court", "moyen"],
+    "smell": 1,
+    "type": "boeuf",
+    "advices": [
+      "Alternative saine aux jouets synthétiques",
+      "Peut être utilisé dans des jeux de recherche olfactive",
+      "Parfait pour les chiots en dentition",
+      "Issues d'élevages européens",
+      "Séchage à air chaud réalisé en Europe",
+      "Les formes peuvent varier d'une friandise à l'autre"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": ["fin gourmet"],
+    "url": "https://www.canigourmand.com/mastication/51-2583-tendon-de-boeuf.html#/35-format-200g",
+    "image": "https://www.canigourmand.com/4529-medium_default/tendon-de-boeuf.jpg"
+  },
+  {
+    "name": "Pattes de canard Canigourmand",
+    "description": "Friandise 100% naturelle à base de pattes de canard, sans céréales ni additifs. Idéale comme récompense après l'effort ou pour une mastication légère, particulièrement adaptée aux chiens sensibles.",
+    "benefits": [
+      "Entretien de l'hygiène bucco-dentaire",
+      "Très riche en protéines (56.25%)",
+      "Faible en matières grasses (7%)",
+      "Haute appétence",
+      "Facilement digestible",
+      "Soutient la croissance"
+    ],
+    "price": "ok",
+    "time": "court",
+    "smell": 1,
+    "type": "canard",
+    "advices": [
+      "Parfait comme récompense après l'effort",
+      "Idéal pour les séances de mastication courtes",
+      "Convient aux chiens sensibles",
+      "Issues d'élevages européens",
+      "Séchage réalisé en Europe",
+      "Les formes peuvent varier d'une friandise à l'autre"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": [
+      "chien actif",
+      "chien sensible",
+      "fin gourmet",
+      "tendance à grossir"
+    ],
+    "url": "https://www.canigourmand.com/mastication/75-2762-patte-de-canard.html#/35-format-200g",
+    "image": "https://www.canigourmand.com/4145-medium_default/patte-de-canard.jpg"
+  },
+  {
+    "name": "Tendons d'Achille de cerf Canigourmand",
+    "description": "Friandise 100% naturelle à base de tendons de cerf, sans céréales ni additifs. Texture épaisse et résistante, idéale pour l'hygiène dentaire et particulièrement adaptée aux chiens sensibles.",
+    "benefits": [
+      "Élimine la plaque dentaire et le tartre",
+      "Très riche en protéines (73.0%)",
+      "Faible en matières grasses (6.0%)",
+      "Hypoallergénique",
+      "100% naturel",
+      "Haute appétence",
+      "Facile à digérer"
+    ],
+    "price": "ok",
+    "time": "moyen",
+    "smell": 2,
+    "type": "gibier",
+    "advices": [
+      "Nouvelle version plus épaisse pour plus de mastication",
+      "Alternative naturelle pour l'hygiène dentaire",
+      "Parfait pour les chiens sensibles",
+      "Convient aux chiots",
+      "Issues d'élevages sélectionnés",
+      "Traçabilité garantie"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": ["chien sensible", "chiot", "fin gourmet", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/1189-2645-tendon-cerf-macher-petit-chien.html#/36-format-500g",
+    "image": "https://www.canigourmand.com/4256-medium_default/tendon-cerf-macher-petit-chien.jpg"
+  },
+  {
+    "name": "Museaux de boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base de museaux de boeuf séchés, sans céréales ni additifs. Texture résistante idéale pour une longue mastication et l'élimination du tartre, parfaite pour l'hygiène dentaire.",
+    "benefits": [
+      "Élimine le tartre",
+      "Nettoie les dents en profondeur",
+      "Améliore l'haleine",
+      "Très riche en protéines (74%)",
+      "Faible en matières grasses (9.14%)",
+      "Maintient une bonne santé buccale"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 5,
+    "type": "boeuf",
+    "advices": [
+      "Solution naturelle contre le tartre",
+      "Parfait pour les grands masticateurs",
+      "Issues d'élevages européens",
+      "Séchage réalisé en Europe",
+      "Les formes peuvent varier d'une friandise à l'autre",
+      "Traçabilité garantie"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": [
+      "chien actif",
+      "fin gourmet",
+      "masticateur efficace",
+      "tendance à grossir"
+    ],
+    "url": "https://www.canigourmand.com/mastication/37-2618-museau-de-boeuf.html#/78-format-150g",
+    "image": "https://www.canigourmand.com/3958-medium_default/museau-de-boeuf.jpg"
+  },
+  {
+    "name": "Poumons de boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base de poumon de boeuf séché, sans céréales ni additifs. Très riche en protéines et faible en matières grasses, particulièrement adaptée aux chiens en croissance et aux chiens actifs.",
+    "benefits": [
+      "Riche en protéines (79.1%)",
+      "Très faible en matières grasses (3.4%)",
+      "Riche en phosphore pour les os et les dents",
+      "Contient de la vitamine B2 et du fer",
+      "Contient de la vitamine B12 pour le système nerveux",
+      "Idéal pour les chiens au poids à surveiller",
+      "Parfait pour les chiens sportifs"
+    ],
+    "price": "ok",
+    "time": "moyen",
+    "smell": 4,
+    "type": "boeuf",
+    "advices": [
+      "Peut être utilisé dans des jeux de piste",
+      "Parfait pour la recherche olfactive",
+      "Idéal pour les chiens en croissance",
+      "Convient aux chiens âgés",
+      "Issues d'élevages européens",
+      "Les formes peuvent varier d'une friandise à l'autre"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["fin gourmet", "tendance à grossir", "chien actif"],
+    "url": "https://www.canigourmand.com/mastication/30-2347-poumons-de-boeuf-friandise-pour-chiens.html#/35-format-200g",
+    "image": "https://www.canigourmand.com/4281-medium_default/poumons-de-boeuf-friandise-pour-chiens.jpg"
+  },
+  {
+    "name": "Plaque de Morue Canigourmand",
+    "description": "Friandise 100% naturelle à base de peau de morue séchée, sans céréales ni additifs. Texture croustillante et savoureuse, particulièrement adaptée aux chiens sensibles et idéale pour l'initiation à la mastication.",
+    "benefits": [
+      "Riche en oméga-3 pour un pelage brillant",
+      "Soutient l'hygiène dentaire",
+      "Réduit la plaque et le tartre",
+      "Hypoallergénique",
+      "Source naturelle de collagène",
+      "Stimule mentalement",
+      "Facilite la digestion"
+    ],
+    "price": "ok",
+    "time": ["moyen", "long"],
+    "smell": 5,
+    "type": "poisson",
+    "advices": [
+      "Parfait pour initier les chiens à la mastication",
+      "Idéal pour les chiens sensibles ou allergiques",
+      "Disponible à l'unité ou au kilo",
+      "Petits chiens et chiots : 1-2 fois par semaine",
+      "Chiens moyens : 2-3 fois par semaine",
+      "Grandes races : jusqu'à 4 fois par semaine",
+      "Toujours laisser de l'eau fraîche à disposition"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": [
+      "chien actif",
+      "chien sensible",
+      "chiot",
+      "fin gourmet",
+      "tendance à grossir"
+    ],
+    "url": "https://www.canigourmand.com/friandises-naturelles-chien/1283-2921-plaque-de-morue.html#/251-lot-x_1",
+    "image": "https://www.canigourmand.com/5020-medium_default/plaque-de-morue.jpg"
+  },
+  {
+    "name": "Trachées de Boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base de trachée de boeuf de 30cm, sans céréales ni additifs. Texture résistante idéale pour une longue mastication et l'hygiène dentaire, peut être utilisée comme jouet à fourrer.",
+    "benefits": [
+      "Réduit la plaque dentaire et les bactéries",
+      "Riche en chondroïtine et glucosamine",
+      "Favorise la santé articulaire",
+      "Soutient la santé musculaire",
+      "Très riche en protéines",
+      "Faible en matières grasses"
+    ],
+    "price": "ok",
+    "time": ["moyen", "long"],
+    "smell": 1,
+    "type": "boeuf",
+    "advices": [
+      "Peut être fourrée et congelée",
+      "Disponible en 15cm ou 30cm",
+      "200g (environ 2 friandises)",
+      "500g (environ 4 friandises)",
+      "Issue d'élevages européens",
+      "Séchée sans traitement chimique",
+      "Adaptée aux chiots, adultes et seniors"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": [
+      "chien actif",
+      "fin gourmet",
+      "masticateur efficace",
+      "tendance à grossir"
+    ],
+    "url": "https://www.canigourmand.com/mastication/33-2962-trachees-de-boeuf.html#/36-format-500g",
+    "image": "https://www.canigourmand.com/4268-medium_default/trachees-de-boeuf.jpg"
+  },
+  {
+    "name": "Os de tripes Canigourmand",
+    "description": "Friandise naturelle à base de peau de boeuf pressée, sans céréales ni additifs. Texture unique qui favorise une mastication saine et durable, particulièrement adaptée pour l'hygiène dentaire.",
+    "benefits": [
+      "Nettoie les dents en profondeur",
+      "Réduit la plaque dentaire",
+      "Renforce les gencives",
+      "Riche en protéines",
+      "Faible en matières grasses",
+      "100% digestible"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 1,
+    "type": "boeuf",
+    "advices": [
+      "Disponible en plusieurs tailles (S à XL)",
+      "Alternative saine aux os en cuir",
+      "100% digestible et naturel",
+      "Parfait pour les longues sessions de mastication",
+      "Surveiller la première utilisation",
+      "Garder de l'eau fraîche à disposition"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien actif", "chien sensible", "masticateur efficace"],
+    "url": "https://www.canigourmand.com/mastication/177-242-os-natutripe.html#/64-format-l",
+    "image": "https://www.canigourmand.com/3564-medium_default/os-natutripe.jpg"
+  },
+  {
+    "name": "Cous de dinde Canigourmand",
+    "description": "Friandise 100% naturelle à base de cous de dinde séchés, sans céréales ni additifs. Texture croquante idéale pour la santé dentaire, riche en protéines et faible en matières grasses.",
+    "benefits": [
+      "Aide à l'hygiène dentaire",
+      "Réduit le tartre",
+      "Renforce les gencives",
+      "Très riche en protéines",
+      "Très faible en matières grasses",
+      "Facilement digestible"
+    ],
+    "price": "ok",
+    "time": "court",
+    "smell": 1,
+    "type": "dinde",
+    "advices": [
+      "Parfait comme récompense après l'effort",
+      "Alternative aux cous de poulet",
+      "Idéal pour les chiens sensibles",
+      "Issues d'élevages européens",
+      "Les formes peuvent varier d'une friandise à l'autre",
+      "Se conserve environ 9 mois"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": [
+      "chien actif",
+      "chien sensible",
+      "fin gourmet",
+      "tendance à grossir"
+    ],
+    "url": "https://www.canigourmand.com/mastication/54-107-cous-de-dinde-friandise-pour-chiens.html#/36-format-500g",
+    "image": "https://www.canigourmand.com/4672-medium_default/cous-de-dinde-friandise-pour-chiens.jpg"
+  },
+  {
+    "name": "Oesophages de boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base d'œsophage de bœuf séché, sans céréales ni additifs. Texture tendre et fondante particulièrement adaptée aux petites mâchoires et aux dents sensibles.",
+    "benefits": [
+      "Réduit la plaque et le tartre",
+      "Texture tendre et fondante",
+      "Très riche en protéines",
+      "Faible en matières grasses",
+      "Effet apaisant",
+      "Facile à digérer",
+      "Augmente la sensation de satiété"
+    ],
+    "price": "ok",
+    "time": "moyen",
+    "smell": 1,
+    "type": "boeuf",
+    "advices": [
+      "Idéal pour les petites mâchoires",
+      "Parfait pour les chiens seniors",
+      "Convient aux chiots en dentition",
+      "200g (9-12 friandises)",
+      "500g (20-25 friandises)",
+      "Se conserve dans le sachet zip",
+      "Issues d'élevages européens"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": ["chiot", "fin gourmet", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/50-101-oesophage-de-boeuf-3760361283760.html#/36-format-500g",
+    "image": "https://www.canigourmand.com/4524-medium_default/oesophage-de-boeuf.jpg"
+  },
+  {
+    "name": "Peaux d'esturgeon Canigourmand",
+    "description": "Friandise 100% naturelle à base de peau d'esturgeon entière, sans céréales ni additifs. Riche en oméga-3, particulièrement adaptée aux chiens sensibles et aux grands masticateurs.",
+    "benefits": [
+      "Réduit le tartre",
+      "Nettoie les dents",
+      "Renforce les muscles de la mâchoire",
+      "Riche en oméga-3",
+      "Riche en protéines",
+      "Hypoallergénique",
+      "Facile à digérer"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 5,
+    "type": "poisson",
+    "advices": [
+      "Format adapté aux grandes mâchoires",
+      "Fabriqué en Dordogne à moins de 10km de l'atelier",
+      "Séchage naturel sans traitement chimique",
+      "Les formes et couleurs peuvent varier",
+      "Idéal pour les chiens sensibles ou allergiques",
+      "Alternative aux friandises classiques"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": ["chien sensible", "masticateur efficace", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/1258-3173-peaux-esturgeon-friandise-naturelle-chien-made-in-france-3760361284767.html#/270-type_d_achat-achat_unique",
+    "image": "https://www.canigourmand.com/4793-medium_default/peaux-esturgeon-friandise-naturelle-chien-made-in-france.jpg"
+  },
+  {
+    "name": "Queues de cochon Canigourmand",
+    "description": "Friandise 100% naturelle à base de queues de cochon séchées, sans céréales ni additifs. Texture résistante idéale pour une mastication prolongée et l'hygiène dentaire.",
+    "benefits": [
+      "Nettoie les dents",
+      "Réduit le tartre",
+      "Renforce les gencives",
+      "Riche en protéines",
+      "Riche en collagène",
+      "Stimule la mastication"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 3,
+    "type": "cochon",
+    "advices": [
+      "Parfait pour les grands masticateurs",
+      "Alternative aux friandises classiques",
+      "Issues d'élevages européens",
+      "Séchage naturel sans traitement chimique",
+      "Les formes peuvent varier d'une friandise à l'autre",
+      "Garder de l'eau fraîche à disposition"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": ["chien actif", "masticateur efficace"],
+    "url": "https://www.canigourmand.com/mastication/404-2920-queues-de-cochon-friandise-pour-chiens.html#/36-format-500g",
+    "image": "https://www.canigourmand.com/4283-medium_default/queues-de-cochon-friandise-pour-chiens.jpg"
+  },
+  {
+    "name": "Queues de boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base de queue de boeuf séchée, sans céréales ni additifs. Texture résistante idéale pour une mastication prolongée et l'hygiène dentaire, particulièrement adaptée aux petits chiens.",
+    "benefits": [
+      "Élimine la plaque dentaire et le tartre",
+      "Améliore l'haleine",
+      "Très riche en protéines (69.3%)",
+      "Faible en matières grasses (8.31%)",
+      "Réduit le stress et l'anxiété",
+      "Renforce les muscles de la mâchoire"
+    ],
+    "price": "ok",
+    "time": "moyen",
+    "smell": 2,
+    "type": "boeuf",
+    "advices": [
+      "200g (environ 5 friandises)",
+      "500g (environ 9 friandises)",
+      "Peut être utilisé dans un tapis de fouille",
+      "Parfait pour développer l'odorat",
+      "Issues d'élevages européens",
+      "Séchage réalisé en Europe",
+      "Les formes peuvent varier"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": ["fin gourmet"],
+    "url": "https://www.canigourmand.com/mastication/407-2620-queue-de-boeuf.html#/80-format-250g",
+    "image": "https://www.canigourmand.com/4527-medium_default/queue-de-boeuf.jpg"
+  },
+  {
+    "name": "Trachées de boeuf Canigourmand",
+    "description": "Friandise 100% naturelle à base de trachée de boeuf, sans céréales ni additifs. Texture résistante idéale pour une longue mastication et l'hygiène dentaire, peut être utilisée comme jouet à fourrer.",
+    "benefits": [
+      "Réduit la plaque dentaire et les bactéries",
+      "Riche en chondroïtine et glucosamine",
+      "Favorise la santé articulaire",
+      "Soutient la santé musculaire",
+      "Très riche en protéines",
+      "Faible en matières grasses"
+    ],
+    "price": "ok",
+    "time": ["moyen", "long"],
+    "smell": 1,
+    "type": "boeuf",
+    "advices": [
+      "Peut être fourrée et congelée",
+      "Disponible en 15cm ou 30cm",
+      "200g (environ 2 friandises)",
+      "500g (environ 4 friandises)",
+      "Issue d'élevages européens",
+      "Séchée sans traitement chimique",
+      "Adaptée aux chiots, adultes et seniors"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": [
+      "chien actif",
+      "fin gourmet",
+      "masticateur efficace",
+      "tendance à grossir"
+    ],
+    "url": "https://www.canigourmand.com/mastication/52-104-trachee-de-boeuf.html#/35-format-200g",
+    "image": "https://www.canigourmand.com/2298-medium_default/trachee-de-boeuf.jpg"
+  },
+  {
+    "name": "Peaux de cerf avec poils Canigourmand",
+    "description": "Friandise 100% naturelle à base de peau de cerf avec poils, sans céréales ni additifs. Texture unique qui combine les bénéfices de la mastication et l'action vermifuge naturelle des poils.",
+    "benefits": [
+      "Réduit le tartre",
+      "Nettoie les dents",
+      "Action vermifuge naturelle",
+      "Très riche en protéines",
+      "Faible en matières grasses",
+      "Hypoallergénique",
+      "Libère des endorphines anti-stress"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 3,
+    "type": "gibier",
+    "advices": [
+      "Peut être caché pour la chasse au trésor",
+      "Alternative pour les chiens intolérants",
+      "Parfait pour les chiots en dentition",
+      "Issues d'élevages européens",
+      "Les formes peuvent varier",
+      "Garder de l'eau fraîche à disposition"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": ["chien sensible", "chiot", "fin gourmet", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/1221-2814-peaux-de-cerf-avec-poils.html#/35-format-200g",
+    "image": "https://www.canigourmand.com/4392-medium_default/peaux-de-cerf-avec-poils.jpg"
+  },
+  {
+    "name": "Plaque de sanglier XXL Canigourmand",
+    "description": "Friandise 100% naturelle à base de peau de sanglier format XXL (30x30cm), sans céréales ni additifs. Texture ultra résistante idéale pour une très longue mastication, particulièrement adaptée aux grands masticateurs.",
+    "benefits": [
+      "Nettoie les dents en profondeur",
+      "Très riche en protéines (73.8%)",
+      "Faible en matières grasses (7.7%)",
+      "Hypoallergénique",
+      "Libère des endorphines anti-stress",
+      "Sécurisé pour les chiens qui gobent"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 4,
+    "type": "gibier",
+    "advices": [
+      "Format XXL (30x30cm)",
+      "1kg contient 2-4 plaques",
+      "Surveiller la première utilisation",
+      "Issues d'élevages européens",
+      "Séchage réalisé en Europe",
+      "Rapport qualité-prix optimal"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": ["chien actif", "fin gourmet", "masticateur efficace"],
+    "url": "https://www.canigourmand.com/mastication/1236-2912-plaque-de-sanglier-xxl.html#/39-format-1kg",
+    "image": "https://www.canigourmand.com/4554-medium_default/plaque-de-sanglier-xxl.jpg"
+  },
+  {
+    "name": "Bois de cerf Easy Canigourmand",
+    "description": "Friandise 100% naturelle à base de bois de cerf, spécialement coupé pour faciliter la prise en gueule. Sans céréales ni additifs, idéale pour une mastication longue durée et l'hygiène dentaire.",
+    "benefits": [
+      "Réduit la plaque dentaire",
+      "Source naturelle de calcium",
+      "Très résistant et durable",
+      "Hypoallergénique",
+      "Sans odeur",
+      "Sécurisé pour la mastication"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 1,
+    "type": "gibier",
+    "advices": [
+      "Disponible en plusieurs tailles",
+      "Parfait pour les débutants",
+      "Ne pas donner si fissuré",
+      "Surveiller l'usure",
+      "Garder de l'eau à disposition",
+      "Ramassage éthique en Europe"
+    ],
+    "size": ["petit", "moyen"],
+    "profile": ["chiot", "masticateur efficace", "chien sensible"],
+    "url": "https://www.canigourmand.com/mastication/78-2506-bois-de-cerf-easy.html#/257-taille-s",
+    "image": "https://www.canigourmand.com/3498-medium_default/bois-de-cerf-easy.jpg"
+  },
+  {
+    "name": "Bois de cerf Canigourmand",
+    "description": "Friandise 100% naturelle à base de bois de cerf entier, sans céréales ni additifs. Format traditionnel non coupé, idéal pour une mastication intense et durable, parfait pour l'hygiène dentaire.",
+    "benefits": [
+      "Élimine le tartre naturellement",
+      "Source de minéraux",
+      "Extrêmement résistant",
+      "Hypoallergénique",
+      "Sans odeur",
+      "Occupation durable"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 1,
+    "type": "gibier",
+    "advices": [
+      "Tailles XS à XL disponibles",
+      "Pour masticateurs expérimentés",
+      "Vérifier régulièrement l'état",
+      "Retirer si trop petit",
+      "Ramassage éthique en Europe",
+      "Conservation illimitée"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["masticateur efficace", "chien sensible"],
+    "url": "https://www.canigourmand.com/mastication/47-2500-bois-de-cerf.html#/263-taille-xs",
+    "image": "https://www.canigourmand.com/3713-medium_default/bois-de-cerf.jpg"
+  },
+  {
+    "name": "Anneau de peau de morue Canigourmand",
+    "description": "Friandise 100% naturelle en forme d'anneau à base de peau de morue séchée, sans céréales ni additifs. Format unique facilitant la prise en gueule, riche en oméga-3.",
+    "benefits": [
+      "Riche en oméga-3",
+      "Soutient l'hygiène dentaire",
+      "Hypoallergénique",
+      "Facile à digérer",
+      "Stimulation mentale",
+      "Format pratique"
+    ],
+    "price": "ok",
+    "time": "moyen",
+    "smell": 5,
+    "type": "poisson",
+    "advices": [
+      "Format anneau sécurisé",
+      "Idéal pour les chiens sensibles",
+      "Alternative aux friandises classiques",
+      "Parfait pour l'initiation",
+      "Garder de l'eau à disposition",
+      "Conservation au sec"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien sensible", "chiot", "fin gourmet"],
+    "url": "https://www.canigourmand.com/mastication/398-693-anneau-de-peau-de-morue.html#/36-format-500g",
+    "image": "https://www.canigourmand.com/4418-medium_default/anneau-de-peau-de-morue.jpg"
+  },
+  {
+    "name": "Corne de buffle Canigourmand",
+    "description": "Friandise 100% naturelle à base de corne de buffle, sans céréales ni additifs. Texture ultra résistante pour une mastication très longue durée, idéale pour les grands masticateurs.",
+    "benefits": [
+      "Nettoyage dentaire intense",
+      "Très riche en protéines",
+      "Ultra résistant",
+      "Sans odeur",
+      "Occupation très longue",
+      "Sécurisé pour la mastication"
+    ],
+    "price": "ok",
+    "time": "long",
+    "smell": 1,
+    "type": "buffle",
+    "advices": [
+      "Plusieurs tailles disponibles",
+      "Pour masticateurs expérimentés",
+      "Surveiller l'usure",
+      "Retirer si trop petit",
+      "Origine contrôlée",
+      "Conservation illimitée"
+    ],
+    "size": ["moyen", "grand"],
+    "profile": ["masticateur efficace", "chien actif"],
+    "url": "https://www.canigourmand.com/mastication/1178-2796-corne-buffle-mastication-chien-3760361283890.html#/64-format-l",
+    "image": "https://www.canigourmand.com/4195-medium_default/corne-buffle-mastication-chien.jpg"
+  },
+  {
+    "name": "Oreilles de boeuf avec poils Canigourmand",
+    "description": "Friandise 100% naturelle à base d'oreilles de boeuf non épilées, sans céréales ni additifs. Les poils offrent une action vermifuge naturelle en plus des bénéfices classiques de mastication.",
+    "benefits": [
+      "Action vermifuge naturelle",
+      "Nettoie les dents",
+      "Réduit le tartre",
+      "Très riche en protéines",
+      "Faible en matières grasses",
+      "Stimule la mastication"
+    ],
+    "price": "ok",
+    "time": "moyen",
+    "smell": 2,
+    "type": "boeuf",
+    "advices": [
+      "Alternative naturelle aux vermifuges",
+      "Effet détoxifiant",
+      "Issues d'élevages européens",
+      "Séchage naturel",
+      "Les formes peuvent varier",
+      "Vendu par lot de 20"
+    ],
+    "size": ["petit", "moyen", "grand"],
+    "profile": ["chien sensible", "fin gourmet", "tendance à grossir"],
+    "url": "https://www.canigourmand.com/mastication/1158-2872-oreilles-de-boeuf-avec-poils.html#/238-lot-x_20",
+    "image": "https://www.canigourmand.com/3959-medium_default/oreilles-de-boeuf-avec-poils.jpg"
+  }
+]

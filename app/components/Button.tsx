@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { motion, HTMLMotionProps } from "framer-motion";
+import Link from "next/link";
 import { ReactNode } from "react";
 
 interface ButtonProps extends HTMLMotionProps<"button"> {

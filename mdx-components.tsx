@@ -1,7 +1,9 @@
 import type { MDXComponents } from "mdx/types";
 import Image, { ImageProps } from "next/image";
-import Info from "./app/components/Info";
-import Canigourmand from "./app/components/Canigourmand";
+
+import Canigourmand from "@/app/components/Canigourmand";
+import Info from "@/app/components/Info";
+import Mastication from "@/app/components/Mastication";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -11,6 +13,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <Image {...props} className="rounded-xl mx-auto" />
     ),
     Info,
+    Mastication,
     Canigourmand,
   };
 }
