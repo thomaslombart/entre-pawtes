@@ -3,9 +3,37 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Configuration des animations spring pour le menu
+  const menuAnimation = {
+    initial: {
+      opacity: 0,
+      scaleY: 0,
+      transformOrigin: "top",
+    },
+    animate: {
+      opacity: 1,
+      scaleY: 1,
+      transition: {
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+      },
+    },
+    exit: {
+      opacity: 0,
+      scaleY: 0,
+      transition: {
+        type: "spring",
+        stiffness: 400,
+        damping: 30,
+      },
+    },
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg">
@@ -81,42 +109,50 @@ export function Navbar() {
           </Link>
         </div>
 
-        {isMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden z-50">
-            <div className="flex flex-col p-4 space-y-5">
-              <Link
-                href="/#services"
-                className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Mes services
-              </Link>
-              <Link
-                href="/blog"
-                className="text-gray-800 hover:text-primary font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Blog
-              </Link>
-              <Link
-                href="/qui-suis-je"
-                className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Qui suis-je ?
-              </Link>
-              <Link
-                href="https://cal.com/entre-pawtes/premier-appel"
-                className="bg-amber-900 text-white hover:bg-amber-800 font-bold py-2 px-6 rounded-full transition-all text-center"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Prendre RDV
-              </Link>
-            </div>
-          </div>
-        )}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              className="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden z-50 rounded-b-3xl"
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              variants={menuAnimation}
+            >
+              <div className="flex flex-col p-4 space-y-5">
+                <Link
+                  href="/#services"
+                  className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Mes services
+                </Link>
+                <Link
+                  href="/blog"
+                  className="text-gray-800 hover:text-primary font-medium transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Blog
+                </Link>
+                <Link
+                  href="/qui-suis-je"
+                  className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Qui suis-je ?
+                </Link>
+                <Link
+                  href="https://cal.com/entre-pawtes/premier-appel"
+                  className="bg-amber-900 text-white hover:bg-amber-800 font-bold py-2 px-6 rounded-full transition-all text-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Prendre RDV
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </header>
   );
