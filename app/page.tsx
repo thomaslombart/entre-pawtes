@@ -1,5 +1,8 @@
+"use client";
+
 import CheckmarkIcon from "@/app/components/CheckmarkIcon";
 import Image from "next/image";
+import Button from "./components/Button";
 
 const testimonials = [
   {
@@ -63,7 +66,7 @@ const unitServices = [
     features: [
       "1h à votre domicile ou en extérieur",
       "Séance d'éducation adaptée à votre chien",
-      "Exercices pratiques et ludiques",
+      "Exercices pratiques et ludiques pour un apprentissage efficace",
       "Conseils personnalisés à appliquer au quotidien",
     ],
     calLink:
@@ -95,6 +98,12 @@ const unitServices = [
   },
 ];
 
+const Underline = ({ children }: { children: React.ReactNode }) => (
+  <span className="underline decoration-wavy decoration-amber-400 decoration-2 underline-offset-4">
+    {children}
+  </span>
+);
+
 export default function Page() {
   return (
     <>
@@ -109,48 +118,40 @@ export default function Page() {
           sizes="100vw"
         />
 
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="absolute inset-0 px-4 sm:px-6 md:px-12 lg:px-24 flex items-center text-white">
-          <div className="flex flex-col gap-6">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black">
-              <span className="block mb-3">Moi c&apos;est Esther,</span>
-              <span className="bg-amber-100 text-amber-900 px-3 py-1 rounded-lg inline md:inline-block">
-                Éducatrice comportementaliste canine à Lille
-              </span>
+        <div className="absolute inset-0 flex items-center justify-center px-4">
+          <div className="px-4 md:px-0 md:text-center max-w-5xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-8">
+              Éducatrice comportementaliste canine à Lille et ses alentours
             </h1>
-
-            <div className="max-w-2xl">
-              <p className="text-base md:text-lg leading-relaxed mb-6">
-                Je suis là pour vous aider à comprendre votre chien (votre{" "}
-                <span className="italic">pawte</span>). Mon objectif est de vous
-                apprendre à communiquer efficacement avec lui, à l&apos;intégrer
-                harmonieusement dans votre quotidien et à établir une relation
-                au top avec lui, le tout dans la{" "}
-                <span className="bg-amber-100 text-amber-900 px-1 py-0.5 font-semibold rounded-sm">
-                  positivité et la bienveillance.
-                </span>{" "}
+            <div className="text-xl text-white mb-12 max-w-3xl mx-auto space-y-4">
+              <p>
+                Je vous aide à comprendre votre chien (votre pawte) et à
+                communiquer efficacement avec lui pour l&apos;intégrer
+                harmonieusement dans votre quotidien.
               </p>
-
-              <p className="font-bold italic">
-                Parce qu&apos;un pawte, c&apos;est aussi un membre de la
-                famille.
+              <p>
+                Mon objectif est d&apos;établir une relation au top entre vous,
+                basée sur la <Underline>positivité</Underline> et la{" "}
+                <Underline>bienveillance</Underline>, pour un équilibre durable.
               </p>
             </div>
+            <Button href="#services">Découvrir mes services</Button>
           </div>
         </div>
       </section>
 
       <section
         id="pourquoi"
-        className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-white text-gray-900"
+        className="px-4 md:px-6 md:px-8 py-12 md:py-16 md:py-20 lg:py-24 bg-white text-gray-900"
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black text-center mb-8 md:mb-12 text-primary">
             Pourquoi choisir Entre Pawtes ?
           </h2>
 
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 mb-8 sm:mb-12 md:mb-16 items-center">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12 mb-8 md:mb-12 md:mb-16 items-center">
             <div className="w-full md:w-1/2">
               <Image
                 src="/images/sully-le-ouf.webp"
@@ -170,7 +171,7 @@ export default function Page() {
                   <h3 className="text-lg font-bold text-primary mb-1">
                     Une approche personnalisée et bienveillante
                   </h3>
-                  <p className="text-sm sm:text-base">
+                  <p className="text-md md:text-base">
                     Chaque chien est unique, c&apos;est pourquoi j&apos;adapte
                     mes méthodes à sa personnalité en utilisant exclusivement
                     des techniques respectueuses basées sur la récompense et le
@@ -187,7 +188,7 @@ export default function Page() {
                   <h3 className="text-lg font-bold text-primary mb-1">
                     Un accompagnement complet
                   </h3>
-                  <p className="text-sm sm:text-base">
+                  <p className="text-md md:text-base">
                     Je ne me limite pas au temps passé ensemble : je vous
                     fournis des outils personnalisés, des fiches pratiques et un
                     suivi adapté pour continuer le travail efficacement à la
@@ -204,7 +205,7 @@ export default function Page() {
                   <h3 className="text-lg font-bold text-primary mb-1">
                     Une relation de confiance durable
                   </h3>
-                  <p className="text-sm sm:text-base">
+                  <p className="text-md md:text-base">
                     Mon objectif est de créer un lien solide entre vous et votre
                     chien, basé sur la compréhension mutuelle et le respect,
                     pour une harmonie qui dure dans le temps et une intégration
@@ -215,15 +216,15 @@ export default function Page() {
             </ul>
           </div>
 
-          <h3 className="text-2xl md:text-3xl font-black text-center mb-6 md:mb-8 text-primary mt-8 sm:mt-12 md:mt-16 lg:mt-24">
+          <h3 className="text-2xl md:text-3xl font-black text-center mb-6 md:mb-8 text-primary mt-8 md:mt-12 md:mt-16 lg:mt-24">
             Mes avis
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 md:gap-10">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-primary text-white relative"
+                className="rounded-lg shadow-md p-4 md:p-6 md:p-8 flex flex-col h-full bg-primary text-white relative"
               >
                 <div className="text-yellow-300 mb-4 text-xl">★★★★★</div>
                 <p className="mb-5">{testimonial.text}</p>
@@ -242,42 +243,39 @@ export default function Page() {
           </div>
 
           <div className="text-center mt-10 md:mt-14">
-            <a
-              href="https://maps.app.goo.gl/ba1gco5uMirkRtSq7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-full text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90"
-            >
+            <Button href="https://maps.app.goo.gl/ba1gco5uMirkRtSq7" isExternal>
               Voir tous les avis
-            </a>
+            </Button>
           </div>
         </div>
       </section>
 
       <section
         id="services"
-        className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-primary text-white"
+        className="px-4 md:px-6 md:px-8 py-16 md:py-24 bg-primary text-white"
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
             Mes services
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 md:gap-10">
             {unitServices.map((service, index) => (
               <div
                 key={index}
-                className="rounded-lg shadow-md p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white/90 text-primary"
+                className="rounded-2xl shadow-md p-6 md:p-8 flex flex-col gap-9 h-full bg-white/90 text-primary"
               >
-                <h3 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-4 text-primary">
-                  {service.title}
-                </h3>
-                <div className="text-center mb-3 sm:mb-6">
-                  <span className="text-xl sm:text-2xl font-medium text-primary">
-                    {service.price}
-                  </span>
+                <div>
+                  <h3 className="text-lg md:text-xl md:text-2xl font-black text-center mb-3 md:mb-4 text-primary">
+                    {service.title}
+                  </h3>
+                  <div className="text-center">
+                    <span className="text-xl md:text-2xl font-medium text-primary">
+                      {service.price}
+                    </span>
+                  </div>
                 </div>
-                <ul className="space-y-2 sm:space-y-4 mb-4 sm:mb-8">
+                <ul className="space-y-2 md:space-y-4">
                   {service.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
                       <CheckmarkIcon />
@@ -286,25 +284,20 @@ export default function Page() {
                   ))}
                 </ul>
                 <div className="text-center mt-auto">
-                  <a
-                    href={service.calLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-xl text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90 w-full font-extrabold"
-                  >
+                  <Button href={service.calLink} isExternal>
                     Choisir
-                  </a>
+                  </Button>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-24">
+          <div className="mt-8 md:mt-12 md:mt-16 lg:mt-24">
             <h3 className="text-2xl md:text-3xl font-black text-center mb-6 md:mb-8">
               Mes forfaits
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 md:gap-12">
               {servicePlans.map((plan, index) => (
                 <div key={index} className="relative mt-20">
                   <div className="absolute md:-top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
@@ -316,7 +309,7 @@ export default function Page() {
                       className="object-contain drop-shadow-xl"
                     />
                   </div>
-                  <div className="rounded-lg shadow-lg p-4 sm:p-6 md:p-8 flex flex-col h-full bg-white text-gray-800 pt-20">
+                  <div className="rounded-2xl shadow-lg p-6 md:p-8 flex flex-col h-full bg-white text-gray-800 pt-20">
                     <h3 className="text-2xl md:text-3xl font-black text-center mb-4 text-primary">
                       {plan.title}
                     </h3>
@@ -334,14 +327,9 @@ export default function Page() {
                       ))}
                     </ul>
                     <div className="text-center mt-auto">
-                      <a
-                        href={plan.calLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block py-2 sm:py-3 px-6 sm:px-8 font-bold rounded-xl text-center transition-all duration-300 bg-amber-900 text-white hover:bg-amber-900/90 w-full font-extrabold"
-                      >
+                      <Button href={plan.calLink} isExternal>
                         Choisir
-                      </a>
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -349,8 +337,8 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="text-center mt-8 sm:mt-10 mb-12 sm:mb-20">
-            <p className="text-sm leading-relaxed text-white/80">
+          <div className="text-center mt-8 md:mt-10 mb-12 md:mb-20">
+            <p className="text-md leading-relaxed text-white/80">
               Vous ne trouvez pas la prestation que vous recherchez ?
               Contactez-moi via{" "}
               <a
@@ -372,7 +360,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden gap-4 sm:gap-8 md:gap-12">
+          <div className="flex flex-col md:flex-row bg-white rounded-xl overflow-hidden gap-4 md:gap-8 md:gap-12">
             <div className="w-full md:w-1/2">
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1n4tB_zyC39Fu2TOfmWCkE7LCottYyHQ&ehbc=2E312F&hl=fr"
@@ -384,8 +372,8 @@ export default function Page() {
                 allowFullScreen
               />
             </div>
-            <div className="w-full md:w-1/2 flex flex-col justify-center text-gray-900 p-4 sm:p-6">
-              <h3 className="mb-2 sm:mb-4 text-xl font-extrabold">
+            <div className="w-full md:w-1/2 flex flex-col justify-center text-gray-900 p-4 md:p-6">
+              <h3 className="mb-2 md:mb-4 text-xl font-extrabold">
                 Frais de déplacement{" "}
                 <span className="relative inline-block">
                   <span className="relative z-10 text-orange-900 font-extrabold">
@@ -395,7 +383,7 @@ export default function Page() {
                 </span>{" "}
                 <span>dans un rayon de 10 km autour de Lille</span>
               </h3>
-              <p className="mb-2 sm:mb-4">
+              <p className="mb-2 md:mb-4">
                 <span className="font-bold text-gray-900 text-lg block mb-1">
                   Zones desservies sans frais :
                 </span>
@@ -405,7 +393,7 @@ export default function Page() {
                   Faches-Thumesnil, Loos, Haubourdin, Lomme et Capinghem.
                 </span>
               </p>
-              <p className="text-sm leading-relaxed italic">
+              <p className="text-md leading-relaxed italic">
                 Au-delà de cette zone, des frais de déplacement de 0,50€/km
                 s&apos;appliquent.
               </p>

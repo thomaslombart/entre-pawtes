@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 py-8 md:py-12 px-4 sm:px-6 md:px-8 border-t border-gray-200">
+    <footer className="bg-gray-50 py-8 md:py-12 px-4 md:px-6 md:px-8 border-t border-gray-200">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 w-full md:w-auto">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-4 w-full md:w-auto">
             <Image
               src="/images/entre-pawtes.png"
               alt="Entre Pawtes"
@@ -13,18 +13,18 @@ export default function Footer() {
               height={80}
               className="rounded-full"
             />
-            <div className="space-y-2 text-center sm:text-left">
+            <div className="space-y-2 text-center md:text-left">
               <h3 className="text-lg font-bold text-primary">Entre Pawtes</h3>
               <p>Éducatrice comportementaliste canine à Lille</p>
               <a
                 href="mailto:entrepawtes@gmail.com"
-                className="flex items-center justify-center sm:justify-start hover:text-primary hover:underline transition-colors"
+                className="flex items-center justify-center md:justify-start hover:text-primary hover:underline transition-colors"
               >
                 entrepawtes@gmail.com
               </a>
               <a
                 href="tel:+33771713043"
-                className="flex items-center justify-center sm:justify-start hover:text-primary hover:underline transition-colors"
+                className="flex items-center justify-center md:justify-start hover:text-primary hover:underline transition-colors"
               >
                 07 71 71 30 43
               </a>
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-4 border-t border-gray-200 text-center text-sm text-gray-600">
+        <div className="mt-8 pt-4 border-t border-gray-200 text-center text-md text-gray-600">
           <p>
             © {new Date().getFullYear()} Entre Pawtes. Tous droits réservés.
           </p>

@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from "framer-motion";
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Configuration des animations spring pour le menu
   const menuAnimation = {
     initial: {
       opacity: 0,
@@ -112,7 +111,7 @@ export function Navbar() {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              className="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden z-50 rounded-b-3xl"
+              className="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden z-50 rounded-b-3xl border border-gray-300 border-t-0"
               initial="initial"
               animate="animate"
               exit="exit"

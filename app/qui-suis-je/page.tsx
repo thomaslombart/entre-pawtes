@@ -33,7 +33,7 @@ const certifications = [
 export default function About() {
   return (
     <>
-      <section className="px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16 lg:py-20 bg-white text-gray-900">
+      <section className="px-4 md:px-6 md:px-8 py-8 md:py-12 md:py-16 lg:py-20 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-12 mx-auto justify-center md:items-center">
             <div className="w-full md:w-1/3 mb-4 md:mb-0">
@@ -47,7 +47,7 @@ export default function About() {
             </div>
 
             <div className="w-full md:w-2/3 space-y-5">
-              <h1 className="text-xl sm:text-2xl font-extrabold text-primary">
+              <h1 className="text-xl md:text-2xl font-extrabold text-primary">
                 Moi, c&apos;est Esther,{" "}
                 <span className="font-bold">dogmom de Sully.</span>
               </h1>
@@ -107,13 +107,13 @@ export default function About() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 lg:py-24 bg-primary text-white">
+      <section className="px-4 md:px-6 md:px-8 py-12 md:py-16 md:py-20 lg:py-24 bg-primary text-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black text-center mb-8 md:mb-12">
             Mes diplômes et formations
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 md:gap-10">
             {certifications.map((cert, index) => (
               <div key={index} className="relative mt-14">
                 <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
@@ -126,10 +126,10 @@ export default function About() {
                   />
                 </div>
                 <div className="rounded-lg shadow-lg p-8 pt-14 flex flex-col h-full bg-white text-gray-800">
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-black text-center mb-3 sm:mb-5 text-primary">
+                  <h3 className="text-lg md:text-xl md:text-2xl font-black text-center mb-3 md:mb-5 text-primary">
                     {cert.title}
                   </h3>
-                  <ul className="space-y-3 sm:space-y-4 mt-1 sm:mt-2 flex-grow">
+                  <ul className="space-y-3 md:space-y-4 mt-1 md:mt-2 flex-grow">
                     {cert.description.map((item, i) => (
                       <li key={i} className="flex items-start">
                         <span className="text-primary font-bold mr-2">•</span>
