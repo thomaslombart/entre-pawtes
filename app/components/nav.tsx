@@ -80,19 +80,19 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-6">
           <Link
             href="/#services"
-            className="text-black hover:underline font-medium transition-colors"
+            className="text-black hover:text-primary font-medium transition-colors"
           >
             Mes services
           </Link>
           <Link
             href="/blog"
-            className="text-black hover:underline font-medium transition-colors"
+            className="text-black hover:text-primary font-medium transition-colors"
           >
             Blog
           </Link>
           <Link
             href="/qui-suis-je"
-            className="text-black hover:underline font-medium transition-colors"
+            className="text-black hover:text-primary font-medium transition-colors"
           >
             Qui suis-je ?
           </Link>
@@ -120,7 +120,7 @@ export function Navbar() {
               <div className="flex flex-col p-4 space-y-5">
                 <Link
                   href="/#services"
-                  className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+                  className="text-gray-800 hover:text-primary font-medium transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Mes services
@@ -134,7 +134,7 @@ export function Navbar() {
                 </Link>
                 <Link
                   href="/qui-suis-je"
-                  className="text-gray-800 hover:text-emerald-800 font-medium transition-all"
+                  className="text-gray-800 hover:text-primary font-medium transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Qui suis-je ?

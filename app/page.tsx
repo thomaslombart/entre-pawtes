@@ -263,17 +263,15 @@ export default function Page() {
             {unitServices.map((service, index) => (
               <div
                 key={index}
-                className="rounded-2xl shadow-md p-6 md:p-8 flex flex-col gap-9 h-full bg-white/90 text-primary"
+                className="rounded-2xl shadow-md p-6 md:p-8 flex flex-col gap-9 h-full bg-white text-primary"
               >
                 <div>
-                  <h3 className="text-lg md:text-xl md:text-2xl font-black text-center mb-3 md:mb-4 text-primary">
+                  <h3 className="text-xl md:text-2xl font-black text-center mb-4 text-primary">
                     {service.title}
                   </h3>
-                  <div className="text-center">
-                    <span className="text-xl md:text-2xl font-medium text-primary">
-                      {service.price}
-                    </span>
-                  </div>
+                  <span className="text-xl md:text-2xl font-medium text-primary text-center">
+                    {service.price}
+                  </span>
                 </div>
                 <ul className="space-y-2 md:space-y-4">
                   {service.features.map((feature, i) => (
@@ -300,7 +298,7 @@ export default function Page() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 md:gap-12">
               {servicePlans.map((plan, index) => (
                 <div key={index} className="relative mt-20">
-                  <div className="absolute md:-top-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                  <div className="absolute  md:-top-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <Image
                       src={plan.image}
                       alt={plan.title}
@@ -309,11 +307,11 @@ export default function Page() {
                       className="object-contain drop-shadow-xl"
                     />
                   </div>
-                  <div className="rounded-2xl shadow-lg p-6 md:p-8 flex flex-col h-full bg-white text-gray-800 pt-20">
+                  <div className="rounded-2xl shadow-lg p-6 pt-16 md:p-10 flex flex-col h-full bg-white text-gray-800 ">
                     <h3 className="text-2xl md:text-3xl font-black text-center mb-4 text-primary">
                       {plan.title}
                     </h3>
-                    <span className="text-2xl md:text-3xl font-medium text-primary text-center mb-6">
+                    <span className="text-xl md:text-2xl font-medium text-primary text-center mb-6">
                       {plan.price}
                     </span>
                     <ul className="space-y-4 mb-8">
@@ -345,14 +343,14 @@ export default function Page() {
                 href="https://www.instagram.com/entre_pawtes/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white font-semibold hover:text-amber-100 transition-colors"
+                className="text-white font-semibold hover:underline"
               >
                 Instagram
               </a>{" "}
               ou par{" "}
               <a
                 href="mailto:entrepawtes@gmail.com"
-                className="text-white font-semibold hover:text-amber-100 transition-colors"
+                className="text-white font-semibold hover:underline"
               >
                 email
               </a>

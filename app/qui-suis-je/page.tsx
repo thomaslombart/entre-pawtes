@@ -125,7 +125,7 @@ export default function About() {
                     className="object-contain drop-shadow-xl"
                   />
                 </div>
-                <div className="rounded-lg shadow-lg p-8 pt-14 flex flex-col h-full bg-white text-gray-800">
+                <div className="rounded-2xl shadow-lg p-8 pt-16 flex flex-col h-full bg-white text-gray-800">
                   <h3 className="text-lg md:text-xl md:text-2xl font-black text-center mb-3 md:mb-5 text-primary">
                     {cert.title}
                   </h3>
