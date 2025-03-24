@@ -99,7 +99,7 @@ const unitServices = [
 ];
 
 const Underline = ({ children }: { children: React.ReactNode }) => (
-  <span className="underline decoration-wavy decoration-amber-400 decoration-2 underline-offset-4">
+  <span className="underline decoration-solid decoration-amber-400 decoration-2 underline-offset-4">
     {children}
   </span>
 );
@@ -118,7 +118,7 @@ export default function Page() {
           sizes="100vw"
         />
 
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="absolute inset-0 flex items-center justify-center px-4">
           <div className="px-4 md:px-0 md:text-center max-w-5xl">
