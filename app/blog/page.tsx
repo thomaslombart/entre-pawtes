@@ -12,6 +12,13 @@ export const metadata: Metadata = {
     description:
       "Découvrez mes articles sur l'éducation et le comportement canin",
     url: "https://www.entre-pawtes.fr/blog",
+    images: [
+      {
+        url: "https://www.entre-pawtes.fr/images/banner.png",
+        width: 1500,
+        height: 1000,
+      },
+    ],
   },
 };
 

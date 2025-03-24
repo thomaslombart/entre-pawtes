@@ -15,7 +15,7 @@ export default function Footer() {
             />
             <div className="space-y-2 text-center md:text-left">
               <h3 className="text-lg font-bold text-primary">Entre Pawtes</h3>
-              <p>Éducatrice comportementaliste canine à Lille</p>
+              <p>Éducation canine positive à Lille</p>
               <a
                 href="mailto:entrepawtes@gmail.com"
                 className="flex items-center justify-center md:justify-start hover:text-primary hover:underline transition-colors"

@@ -121,9 +121,9 @@ export default function Page() {
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="absolute inset-0 flex items-center justify-center px-4">
-          <div className="px-4 md:px-0 md:text-center max-w-5xl">
+          <div className="px-4 md:px-0 md:text-center max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-8">
-              Éducatrice comportementaliste canine à Lille et ses alentours
+              Éducation canine positive à Lille et ses alentours
             </h1>
             <div className="text-xl text-white mb-12 max-w-3xl mx-auto space-y-4">
               <p>

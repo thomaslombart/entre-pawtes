@@ -2,10 +2,10 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Entre Pawtes | Éducatrice comportementaliste canine à Lille",
+    name: "Entre Pawtes | Éducation canine positive à Lille",
     short_name: "Entre Pawtes",
     description:
-      "Entre Pawtes propose des services d'éducation et de comportementalisme canin sur Lille et ses alentours",
+      "Entre Pawtes vous accompagne dans l’éducation de votre chien grâce à une approche positive et bienveillante. Bilans comportementaux et cours individuels à Lille et ses environs.",
     icons: [
       {
         src: "/android-chrome-192x192.png",

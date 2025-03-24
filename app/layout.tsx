@@ -12,9 +12,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Entre Pawtes | Éducatrice comportementaliste canine à Lille",
+  title: "Entre Pawtes | Éducation canine positive à Lille",
   description:
-    "Entre Pawtes propose des services d'éducation et de comportementalisme canin sur Lille et ses alentours. Bilans comportementaux, cours individuels et balades.",
+    "Entre Pawtes vous accompagne dans l’éducation de votre chien grâce à une approche positive et bienveillante. Bilans comportementaux et cours individuels à Lille et ses environs.",
   keywords: [
     "éducateur canin",
     "comportementaliste canin",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Nord",
   ],
   openGraph: {
-    title: "Entre Pawtes | Éducatrice comportementaliste canine à Lille",
+    title: "Entre Pawtes | Éducation canine positive à Lille",
     description:
       "Entre Pawtes propose des services d'éducation et de comportementalisme canin sur Lille et sa région.",
     url: "https://www.entre-pawtes.fr",

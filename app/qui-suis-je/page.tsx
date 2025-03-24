@@ -34,11 +34,11 @@ const certifications = [
 export const metadata: Metadata = {
   title: "Qui suis-je | Entre Pawtes",
   description:
-    "Découvrez mon parcours en tant qu'éducatrice comportementaliste canine à Lille.",
+    "Formée en éducation canine bienveillante, je vous présente mon parcours, mes valeurs et mes certifications pour mieux accompagner les chiens et leurs humains à Lille.",
   openGraph: {
     title: "Qui suis-je | Entre Pawtes",
     description:
-      "Découvrez mon parcours en tant qu'éducatrice comportementaliste canine à Lille",
+      "Formée en éducation canine bienveillante, je vous présente mon parcours, mes valeurs et mes certifications pour mieux accompagner les chiens et leurs humains à Lille.",
     url: "https://www.entre-pawtes.fr/qui-suis-je",
     images: [
       {
