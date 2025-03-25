@@ -269,7 +269,7 @@ export default function Page() {
                   <h3 className="text-xl md:text-2xl font-black text-center mb-4 text-primary">
                     {service.title}
                   </h3>
-                  <span className="text-xl md:text-2xl font-medium text-primary text-center">
+                  <span className="text-xl md:text-2xl font-medium text-primary block text-center">
                     {service.price}
                   </span>
                 </div>
