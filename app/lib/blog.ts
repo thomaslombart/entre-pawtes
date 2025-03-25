@@ -8,6 +8,7 @@ export type BlogPost = {
   date: string;
   description?: string;
   lastUpdated?: string;
+  banner?: string;
 };
 
 export function getBlogPosts(): BlogPost[] {
@@ -34,6 +35,7 @@ export function getBlogPosts(): BlogPost[] {
           ? new Date(data.lastUpdated).toISOString()
           : undefined,
         description: data.description,
+        banner: data.banner,
       };
     });
 }
