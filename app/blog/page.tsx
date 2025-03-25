@@ -46,14 +46,14 @@ export default function BlogIndex() {
             className="group rounded-xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md"
           >
             <Link href={`/blog/${post.slug}`} className="block p-4 md:p-6">
-              <div className="flex gap-4 md:gap-6">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                 {post.banner ? (
                   <Image
                     src={post.banner}
                     alt={post.title}
                     width={200}
                     height={200}
-                    className="rounded-lg w-24 md:w-32 h-24 md:h-32 object-cover flex-shrink-0"
+                    className="rounded-lg w-full md:w-32 h-48 md:h-32 object-cover flex-shrink-0"
                     priority
                   />
                 ) : null}
