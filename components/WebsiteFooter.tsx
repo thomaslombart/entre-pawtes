@@ -9,8 +9,8 @@ export default function Footer() {
             <Image
               src="/images/entre-pawtes.png"
               alt="Entre Pawtes"
-              width={80}
-              height={80}
+              width={64}
+              height={64}
               className="rounded-full"
             />
             <div className="space-y-2 text-center md:text-left">

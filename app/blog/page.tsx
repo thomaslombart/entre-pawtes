@@ -1,7 +1,8 @@
-import Link from "next/link";
-import Image from "next/image";
-import { getBlogPosts } from "../lib/blog";
 import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+
+import { getBlogPosts } from "@/app/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog | Entre Pawtes",

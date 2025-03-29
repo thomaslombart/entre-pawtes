@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { Navbar } from "./components/nav";
-import Footer from "./components/footer";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+import "./globals.css";
+import Footer from "@/components/WebsiteFooter";
+import Navbar from "@/components/WebsiteNavbar";
 
 const inter = Inter({
   variable: "--font-inter",

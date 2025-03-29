@@ -1,11 +1,13 @@
 "use client";
 
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
-export function Navbar() {
+import Banner from "./Banner";
+
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuAnimation = {
@@ -36,10 +38,11 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg">
+      <Banner />
       <nav className="flex justify-between items-center px-4 md:px-18 py-2">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/entre-pawtes.png"
+            src="/images/logo.png"
             alt="Logo Entre Pawtes"
             width={48}
             height={48}
@@ -85,6 +88,12 @@ export function Navbar() {
             Mes services
           </Link>
           <Link
+            href="/outils"
+            className="text-black hover:text-primary font-medium transition-colors"
+          >
+            Outils
+          </Link>
+          <Link
             href="/blog"
             className="text-black hover:text-primary font-medium transition-colors"
           >
@@ -124,6 +133,13 @@ export function Navbar() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Mes services
+                </Link>
+                <Link
+                  href="/outils"
+                  className="text-gray-800 hover:text-primary font-medium transition-all"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Outils
                 </Link>
                 <Link
                   href="/blog"

@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+
 import matter from "gray-matter";
 
 export type BlogPost = {
@@ -37,5 +38,6 @@ export function getBlogPosts(): BlogPost[] {
         description: data.description,
         banner: data.banner,
       };
-    });
+    })
+    .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 }
