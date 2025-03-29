@@ -211,7 +211,7 @@ export default function Page() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [formData.currentStep, canProceed]);
+  }, [formData.currentStep, canProceed, handleKeyDown]);
 
   const renderCurrentStep = () => {
     return (

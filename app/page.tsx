@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 
-import Button from "./components/Button";
-
-import CheckmarkIcon from "@/app/components/CheckmarkIcon";
+import Button from "@/components/Button";
+import CheckmarkIcon from "@/components/CheckmarkIcon";
 
 const testimonials = [
   {

@@ -38,5 +38,6 @@ export function getBlogPosts(): BlogPost[] {
         description: data.description,
         banner: data.banner,
       };
-    });
+    })
+    .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 }

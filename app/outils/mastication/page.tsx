@@ -1,6 +1,6 @@
 import React from "react";
 
-import Mastication from "@/app/components/Mastication";
+import Mastication from "@/components/Mastication";
 
 export default function MasticationPage() {
   return (

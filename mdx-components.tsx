@@ -1,9 +1,10 @@
 import type { MDXComponents } from "mdx/types";
 import Image, { ImageProps } from "next/image";
 
-import Canigourmand from "@/app/components/Canigourmand";
-import Info from "@/app/components/Info";
-import Mastication from "@/app/components/Mastication";
+import Canigourmand from "@/components/Canigourmand";
+import Info from "@/components/Info";
+import Mastication from "@/components/Mastication";
+import Planning from "@/components/Planning";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -15,5 +16,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Info,
     Mastication,
     Canigourmand,
+    Planning,
   };
 }
